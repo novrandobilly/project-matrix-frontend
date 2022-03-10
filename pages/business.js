@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Homepage</title>
-        <meta name='description' content='Matrix Homepage' />
+        <title>Business</title>
+        <meta name='description' content='Matrix Business Page' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
