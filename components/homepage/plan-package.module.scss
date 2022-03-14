@@ -119,6 +119,9 @@
       border-radius: 10px;
       border: none;
       padding: 15px 0;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

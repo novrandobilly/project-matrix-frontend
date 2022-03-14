@@ -3,6 +3,7 @@
   max-width: 1536px;
   margin: auto;
   padding: 0 100px 150px;
+  background-color: #f5f6f8;
 }
 
 .learn-more {
@@ -38,6 +39,9 @@
     color: #fff;
     padding: 20px 0;
     border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

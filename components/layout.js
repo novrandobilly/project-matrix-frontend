@@ -1,12 +1,17 @@
 import Header from './header';
 import Footer from './footer';
+import styles from './layout.module.scss';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <div className={styles['header-container']}>
+        <Header />
+      </div>
       {children}
-      <Footer />
+      <div className={styles['footer-container']}>
+        <Footer />
+      </div>
     </>
   );
 };

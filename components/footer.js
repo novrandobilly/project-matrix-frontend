@@ -58,9 +58,15 @@ export default function footer() {
           <strong>Follow our socials!</strong>
         </h4>
         <div className={styles['social-media']}>
-          <Image alt='Instagram' src={Instagram} width={30} height={30} />
-          <Image alt='Faccebook' src={Facebook} width={30} height={30} />
-          <Image alt='Linkedin' src={Linkedin} width={30} height={30} />
+          <a target='_blank' rel='noreferrer' href='https://www.instagram.com/matrix.napinfo'>
+            <Image alt='Instagram' src={Instagram} width={30} height={30} />
+          </a>
+          <a target='_blank' rel='noreferrer' href='https://www.facebook.com/Matrix.NAPInfo'>
+            <Image alt='Faccebook' src={Facebook} width={30} height={30} />
+          </a>
+          <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/company/matrix-napinfo/'>
+            <Image alt='Linkedin' src={Linkedin} width={30} height={30} />
+          </a>
         </div>
       </div>
     </div>
