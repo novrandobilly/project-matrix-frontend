@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import CheckBlue from '../../assets/icons/check-blue.svg';
+import CheckRed from '../../assets/icons/check-red.svg';
 import styles from './plan-package.module.scss';
 
 export default function PlanPackage() {
@@ -57,7 +58,8 @@ export default function PlanPackage() {
             <strong> Choose This Plan</strong>
           </button>
         </div>
-        <div className={styles['plan-card']}>
+
+        <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
             <h3>Regular</h3>
             <p>
@@ -75,23 +77,23 @@ export default function PlanPackage() {
           </p>
           <ul className={styles['package-features']}>
             <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              <Image alt='Check Blue' src={CheckRed} width={20} height={20} />
               &nbsp; <strong>Package&nbsp;</strong>Feature
             </li>
             <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              <Image alt='Check Blue' src={CheckRed} width={20} height={20} />
               &nbsp; <strong>Package&nbsp;</strong>Feature
             </li>
             <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              <Image alt='Check Blue' src={CheckRed} width={20} height={20} />
               &nbsp; <strong>Package&nbsp;</strong>Feature
             </li>
             <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              <Image alt='Check Blue' src={CheckRed} width={20} height={20} />
               &nbsp; <strong>Package&nbsp;</strong>Feature
             </li>
             <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              <Image alt='Check Blue' src={CheckRed} width={20} height={20} />
               &nbsp; <strong>Package&nbsp;</strong>Feature
             </li>
           </ul>
@@ -99,6 +101,7 @@ export default function PlanPackage() {
             <strong> Choose This Plan</strong>
           </button>
         </div>
+
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
             <h3>Regular</h3>
