@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Banner from '../components/homepage/banner';
 import PlanPackage from '../components/homepage/plan-package';
+import LearnMore from '../components/homepage/learn-more';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <Banner />
       <PlanPackage />
+      <LearnMore />
     </div>
   );
 }
