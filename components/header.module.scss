@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  padding: 0 100px;
+  max-width: 1536px;
+  margin: auto;
+  background-color: #151a48;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+
+  .language-toggle {
+    width: 100%;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .toggle-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #626584;
+      border-radius: 30px;
+      width: 100%;
+      max-width: 65px;
+      padding: 2px 5px;
+      & > * {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .lang-active {
+        background-color: #ec4176;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 0.7rem;
+        transform: scale(1.7);
+      }
+    }
+  }
+
+  .contact-sub-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 325px;
+
+    .phone,
+    .instagram {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      & > *:nth-child(2) {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.navigation-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+
+  .navigation-list {
+    width: 100%;
+    max-width: 600px;
+    list-style: none;
+    padding: 0;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .business-button {
+    display: flex;
+    background-color: #078141;
+    padding: 7px 20px;
+    border-radius: 50px;
+    p {
+      margin: 0 0 0 10px;
+    }
+  }
+}
