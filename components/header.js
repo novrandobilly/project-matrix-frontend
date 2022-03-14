@@ -27,6 +27,7 @@ export default function Header() {
         <div className={styles['contact-sub-bar']}>
           <div className={styles['instagram']}>
             <Image alt='Instagram' src={Instagram} width={20} height={20} />
+
             <a target='_blank' rel='noreferrer' href='https://www.instagram.com/matrix.napinfo'>
               matrix.napinfo
             </a>
@@ -38,7 +39,11 @@ export default function Header() {
         </div>
       </div>
       <div className={styles['navigation-bar']}>
-        <Image alt='Logo' src={Logo} width={150} height={65} />
+        <Link passHref href='/'>
+          <div className={styles['logo-container']}>
+            <Image alt='Logo' src={Logo} width={150} height={65} />
+          </div>
+        </Link>
         <ul className={styles['navigation-list']}>
           <li>
             <Link href='/product'>Product</Link>

@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Banner from '../components/homepage/banner';
+import PlanPackage from '../components/homepage/plan-package';
 
 export default function Home() {
   return (
@@ -9,7 +11,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main></main>
+      <Banner />
+      <PlanPackage />
     </div>
   );
 }
