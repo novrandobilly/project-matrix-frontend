@@ -12,8 +12,8 @@ export default function PlanPackage() {
         <h1>Your Needs!</h1>
       </div>
       <p className={styles['sub-title']}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti excepturi doloremque quidem sit iste nihil
-        tenetur suscipit sed, iusto placeat?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in, dolorum eaque fugit eos magnam! Adipisci
+        enim voluptas earum! Explicabo voluptatem eligendi cum officia.
       </p>
       <div className={styles['plan-option']}>
         <div className={styles['plan-card']}>
@@ -61,7 +61,7 @@ export default function PlanPackage() {
 
         <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
-            <h3>Regular</h3>
+            <h3>Premium</h3>
             <p>
               <strong>DISC 50%</strong>
             </p>
@@ -104,7 +104,7 @@ export default function PlanPackage() {
 
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
-            <h3>Regular</h3>
+            <h3>Boost</h3>
             <p>
               <strong>DISC 50%</strong>
             </p>

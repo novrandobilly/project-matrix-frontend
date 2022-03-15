@@ -8,17 +8,19 @@ export default function Banner({
   bannerSource = [HomeBanner, HomeBanner, HomeBanner, HomeBanner, HomeBanner],
   bannerWidth = 1366,
   bannerHeight = 420,
+  alt = 'Home Banner',
+  style = {},
 }) {
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const onBannerSelectHandler = (e) => {
     const bannerId = e.target.id;
     setActiveIndex(parseInt(bannerId));
   };
   return (
-    <div className={styles['container']}>
+    <div className={styles['container']} style={style}>
       <div className={styles['banner']}>
-        <Image alt='Home Banner' src={bannerSource[activeIndex - 1]} width={bannerWidth} height={bannerHeight} />
+        <Image alt={alt} src={bannerSource[activeIndex - 1]} width={bannerWidth} height={bannerHeight} />
       </div>
       {bannerNav && (
         <div className={styles['banner-navigation']}>
