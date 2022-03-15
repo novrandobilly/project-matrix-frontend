@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import styles from './navlink.module.scss';
+import styles from './navLink.module.scss';
 
 const NavLink = ({ children, href, exact, passHref = false }) => {
   const { pathname } = useRouter();
