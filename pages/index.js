@@ -22,6 +22,14 @@ export default function Home() {
       <div className={styles['satisfied-customer-container']}>
         <SatisfiedCustomer />
       </div>
+
+      <div className={styles['registration-fixed-box']}>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non consectetur asperiores accusamus dicta
+          in qui magni sapiente excepturi temporibus.
+        </p>
+        <button>Daftar Sekarang!</button>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import NavLink from './navLink';
 import Instagram from '../assets/icons/instagram.svg';
 import Building from '../assets/icons/building.svg';
 import Logo from '../assets/logo.png';
@@ -46,22 +47,24 @@ export default function Header() {
         </Link>
         <ul className={styles['navigation-list']}>
           <li>
-            <Link href='/product'>Product</Link>
+            <NavLink exact href='/product'>
+              Product
+            </NavLink>
           </li>
           <li>
-            <Link href='/about-us'>Company</Link>
+            <NavLink href='/about-us'>Company</NavLink>
           </li>
           <li>
-            <Link href='/career'>Career</Link>
+            <NavLink href='/career'>Career</NavLink>
           </li>
           <li>
-            <Link href='/highlights'>Highlights</Link>
+            <NavLink href='/highlights'>Highlights</NavLink>
           </li>
           <li>
-            <Link href='/support'>Support</Link>
+            <NavLink href='/support'>Support</NavLink>
           </li>
           <li>
-            <Link href='/contact-us'>Contact Us</Link>
+            <NavLink href='/contact-us'>Contact Us</NavLink>
           </li>
         </ul>
         <div className={styles['business-button']}>
