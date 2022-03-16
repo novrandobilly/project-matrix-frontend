@@ -6,7 +6,6 @@ import LearnMore from '../components/homepage/learn-more';
 import SatisfiedCustomer from '../components/homepage/satisfied-customer';
 
 export default function Home() {
-  console.log(process.env.secretcode);
   return (
     <div>
       <Head>
@@ -14,7 +13,6 @@ export default function Home() {
         <meta name='description' content='Matrix Homepage' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <Banner />
       <PlanPackage />
       <section className={styles['learn-more-container']}>
@@ -34,3 +32,9 @@ export default function Home() {
     </div>
   );
 }
+
+export const getServerSideProps = async (context) => {
+  return {
+    props: {},
+  };
+};

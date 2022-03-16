@@ -1,0 +1,135 @@
+.container {
+  width: 100%;
+  background-color: #151a48;
+  padding-bottom: 100px;
+}
+.contact-us-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1536px;
+  padding-bottom: 100px;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+
+  .mapbox {
+    width: 60%;
+    height: 500px;
+  }
+
+  .company-address {
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ec4176;
+    padding-left: 50px;
+    h1 {
+      text-decoration: underline;
+    }
+    .phone,
+    .address,
+    .email {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      .icon {
+        width: 100%;
+        max-width: 50px;
+      }
+      p {
+        margin: 0;
+        &:nth-child(2) {
+          width: 100%;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.popup-text {
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.message-box {
+  width: 100%;
+  max-width: 1536px;
+  background-color: #151a48;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    width: 100%;
+    margin: 0 0 50px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    .input-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 225px;
+      margin-bottom: 30px;
+      .short-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 48%;
+        input {
+          color: #fff;
+          background-color: transparent;
+          border: 2px solid #bebebe;
+          border-radius: 10px;
+          padding: 18px;
+          font-size: 1.25rem;
+        }
+      }
+      textarea {
+        width: 48%;
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #bebebe;
+        border-radius: 10px;
+        padding: 20px;
+        height: inherit;
+        font-family: inherit;
+        font-size: 1.25rem;
+      }
+    }
+
+    button {
+      outline: none;
+      border: none;
+      background-color: #ec4176;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 200px;
+      padding: 20px 0;
+      color: #fff;
+      align-self: flex-end;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
