@@ -26,8 +26,7 @@ export default function Home() {
 
   useEffect(() => {
     const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-    mapboxgl.accessToken =
-      'pk.eyJ1Ijoibm92cmFuZG9iaWxseSIsImEiOiJjbDB0MTY1eXMwaHl0M2xuNWhvdzFoa2tjIn0.ellQ6Sn0w2JoPzSatsX16g';
+    mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API;
     const map = new mapboxgl.Map({
       container: 'company-map',
       style: 'mapbox://styles/mapbox/streets-v11',
@@ -50,7 +49,6 @@ export default function Home() {
         <title>Contact Us</title>
         <meta name='description' content='Matrix Contact Us Page' />
         <link rel='icon' href='/favicon.ico' />
-        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
       </Head>
 
       <div className={styles['contact-us-map']}>
