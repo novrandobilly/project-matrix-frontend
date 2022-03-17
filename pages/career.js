@@ -109,7 +109,7 @@ export default function Home() {
       </div>
 
       <div className={styles['vacancy-container']}>
-        <h1>JOB VACANCY</h1>
+        <h2>JOB VACANCY</h2>
         <div className={styles['search-input']}>
           <input type='text' placeholder='Search...' />
           <div className={styles['image-container']}>
@@ -119,41 +119,46 @@ export default function Home() {
         <p className={styles['send-cv']}>
           Send your CV to <strong>career@nap.net.id</strong>
         </p>
-        <div className={styles['job-item']}>
-          <h2>JOB POSITION</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium dolores
-            rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque sequi quisquam
-            consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta consequuntur sit
-            quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse, nulla sit! Blanditiis
-            animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam eum? Harum quam est in
-            voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur aliquid harum architecto
-            illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi tenetur provident quo est?
-          </p>
-        </div>
-        <div className={styles['job-item']}>
-          <h2>JOB POSITION</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium dolores
-            rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque sequi quisquam
-            consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta consequuntur sit
-            quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse, nulla sit! Blanditiis
-            animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam eum? Harum quam est in
-            voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur aliquid harum architecto
-            illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi tenetur provident quo est?
-          </p>
-        </div>
-        <div className={styles['job-item']}>
-          <h2>JOB POSITION</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium dolores
-            rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque sequi quisquam
-            consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta consequuntur sit
-            quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse, nulla sit! Blanditiis
-            animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam eum? Harum quam est in
-            voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur aliquid harum architecto
-            illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi tenetur provident quo est?
-          </p>
+        <div className={styles['job-listing']}>
+          <div className={styles['job-item']}>
+            <h2>JOB POSITION</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium
+              dolores rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque
+              sequi quisquam consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta
+              consequuntur sit quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse,
+              nulla sit! Blanditiis animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam
+              eum? Harum quam est in voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur
+              aliquid harum architecto illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi
+              tenetur provident quo est?
+            </p>
+          </div>
+          <div className={styles['job-item']}>
+            <h2>JOB POSITION</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium
+              dolores rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque
+              sequi quisquam consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta
+              consequuntur sit quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse,
+              nulla sit! Blanditiis animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam
+              eum? Harum quam est in voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur
+              aliquid harum architecto illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi
+              tenetur provident quo est?
+            </p>
+          </div>
+          <div className={styles['job-item']}>
+            <h2>JOB POSITION</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium
+              dolores rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque
+              sequi quisquam consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta
+              consequuntur sit quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse,
+              nulla sit! Blanditiis animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam
+              eum? Harum quam est in voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur
+              aliquid harum architecto illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi
+              tenetur provident quo est?
+            </p>
+          </div>
         </div>
       </div>
     </div>
