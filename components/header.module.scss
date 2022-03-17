@@ -47,12 +47,16 @@
         }
       }
 
-      .lang-active {
+      .lang-active,
+      .lang-active-blue {
         background-color: #ec4176;
         border-radius: 50%;
         line-height: 1;
         font-size: 0.7rem;
         transform: scale(1.7);
+      }
+      .lang-active-blue {
+        background-color: #4d5eff;
       }
     }
   }
@@ -107,8 +111,10 @@
     }
   }
 
-  .business-button {
+  .business-button,
+  .business-button-red {
     display: flex;
+    align-items: center;
     background-color: #078141;
     padding: 7px 20px;
     border-radius: 50px;
@@ -118,5 +124,9 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  .business-button-red {
+    background-color: #ec4176;
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import NavLink from './navLink';
@@ -10,6 +11,19 @@ import styles from './header.module.scss';
 
 export default function Header() {
   const [isEnglish, setIsEnglish] = useState(true);
+  const { pathname } = useRouter();
+  let isBusinessSolution = false;
+  if (pathname === '/business-solution') {
+    isBusinessSolution = true;
+  }
+
+  let toggleButtonEN = isEnglish ? styles['lang-active'] : '';
+  let toggleButtonID = !isEnglish ? styles['lang-active'] : '';
+
+  if (isBusinessSolution) {
+    toggleButtonEN = isEnglish ? styles['lang-active-blue'] : '';
+    toggleButtonID = !isEnglish ? styles['lang-active-blue'] : '';
+  }
 
   return (
     <div className={styles['container']}>
@@ -17,10 +31,10 @@ export default function Header() {
         <div className={styles['language-toggle']}>
           <p>Language</p>
           <div className={styles['toggle-button']}>
-            <span onClick={() => setIsEnglish(true)} className={isEnglish ? styles['lang-active'] : ''}>
+            <span onClick={() => setIsEnglish(true)} className={toggleButtonEN}>
               EN
             </span>
-            <span onClick={() => setIsEnglish(false)} className={!isEnglish ? styles['lang-active'] : ''}>
+            <span onClick={() => setIsEnglish(false)} className={toggleButtonID}>
               ID
             </span>
           </div>
@@ -67,7 +81,7 @@ export default function Header() {
             <NavLink href='/contact-us'>Contact Us</NavLink>
           </li>
         </ul>
-        <div className={styles['business-button']}>
+        <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
           <Image alt='Building' src={Building} width={15} height={15} />
           <p>
             <strong>
