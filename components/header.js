@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +11,23 @@ import styles from './header.module.scss';
 
 export default function Header() {
   const [isEnglish, setIsEnglish] = useState(true);
+  const [supportDropdown, setSupportDropdown] = useState(false);
+  const supportDDref = useRef(null);
   const { pathname } = useRouter();
+
+  useEffect(() => {
+    if (!supportDropdown) return;
+
+    function handleClick(event) {
+      if (supportDDref.current && !supportDDref.current.contains(event.target)) {
+        setSupportDropdown(false);
+      }
+    }
+    window.addEventListener('click', handleClick);
+
+    return () => window.removeEventListener('click', handleClick);
+  }, [supportDropdown]);
+
   let isBusinessSolution = false;
   if (pathname === '/business-solution') {
     isBusinessSolution = true;
@@ -75,10 +91,28 @@ export default function Header() {
             <NavLink href='/highlights'>Highlights</NavLink>
           </li>
           <li>
-            <NavLink href='/support'>Support</NavLink>
-          </li>
-          <li>
             <NavLink href='/contact-us'>Contact Us</NavLink>
+          </li>
+          <li className={styles['support']}>
+            <p
+              className={supportDropdown && styles['active']}
+              onClick={() => setSupportDropdown((prevState) => !prevState)}>
+              Support
+            </p>
+            <ul ref={supportDDref} className={`${styles['support-dropdown']} ${!supportDropdown && styles['hide']}`}>
+              <li>
+                <Link href='/support/cacti'>Cacti</Link>
+              </li>
+              <li>
+                <Link href='/support/ip-transit'>IP-Transit</Link>
+              </li>
+              <li>
+                <Link href='/support/mc-ix'>MC-IX</Link>
+              </li>
+              <li>
+                <Link href='/support/looking-glass'>Looking Glass</Link>
+              </li>
+            </ul>
           </li>
         </ul>
         <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
