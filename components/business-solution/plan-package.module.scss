@@ -1,0 +1,146 @@
+.container {
+  width: 100%;
+  background: linear-gradient(#f5f6f8 35%, #151a48 35%);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 150px;
+
+  h1,
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & > *:nth-child(2) {
+      padding: 0 5px;
+    }
+  }
+
+  .sub-title {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 75px;
+  }
+}
+
+.plan-option {
+  width: 100%;
+  max-width: 1536px;
+  margin: auto;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+
+  .plan-card {
+    width: 30%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 10px #9e9e9e;
+
+    .plan-header {
+      padding: 0 25px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+        background-color: #e6e9ff;
+        color: #6472fc;
+        padding: 5px 8px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+      }
+    }
+
+    .price {
+      padding: 0 25px;
+
+      width: 100%;
+      font-size: 2rem;
+      text-align: start;
+
+      margin: 20px 0;
+      span {
+        font-size: 1.25rem;
+      }
+    }
+
+    .plan-description {
+      padding: 0 25px;
+
+      width: 100%;
+      font-size: 0.8rem;
+      text-align: start;
+      margin: 0 0 20px;
+    }
+
+    .package-features {
+      padding: 0 25px;
+      width: 100%;
+      list-style: none;
+      font-size: 1.25rem;
+      li {
+        margin: 0 0 25px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .choice-button {
+      outline: none;
+      width: 100%;
+      background-color: #4d5eff;
+      color: #fff;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      border: none;
+      padding: 15px 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.plan-card.best-choice {
+  transform: scale(1.1);
+  .plan-header {
+    p {
+      color: #4d5efe;
+      background-color: #e6e9ff;
+    }
+  }
+  .price {
+    color: #4d5efe;
+
+    span {
+      color: #000;
+    }
+  }
+  .choice-button {
+    background-color: #4d5efe;
+  }
+}

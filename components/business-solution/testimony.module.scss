@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  background: linear-gradient(#151a48 33%, #f5f6f8 33%);
+}
+
+.testimony-item {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #a5a5a5;
+  margin: auto;
+
+  background-color: #fff;
+  .user-metadata {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    .avatar-container {
+      width: 100%;
+      max-width: 60px;
+      height: 100px;
+      .avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translateX(-50%);
+        img {
+          border: 2px solid #4d5eff !important;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .name-position {
+      width: 100%;
+      h3 {
+        margin: 0;
+        &:nth-child(2) {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .rating {
+      width: 100%;
+      max-width: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .testimony-text {
+    width: 100%;
+    padding: 0 20px 25px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.single-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  & > * {
+    height: 100px;
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #4d5eff;
+      border: 1px solid #4d5eff;
+      color: #fff;
+      font-weight: 700;
+    }
+    &:nth-child(2) {
+      width: 100%;
+      max-width: 700px;
+      min-height: 250px;
+    }
+  }
+}
