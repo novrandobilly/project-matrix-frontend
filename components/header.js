@@ -95,7 +95,7 @@ export default function Header() {
           </li>
           <li className={styles['support']}>
             <p
-              className={supportDropdown && styles['active']}
+              className={supportDropdown ? styles['active'] : ''}
               onClick={() => setSupportDropdown((prevState) => !prevState)}>
               Support
             </p>
