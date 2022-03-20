@@ -66,7 +66,7 @@ export default function Home() {
               <Image alt='Address' src={Location} width={25} height={25} />
             </div>
             <p>
-              Menara Kadin Indonesia, 7<sub>th</sub> floor, JL. HR. Rasuna Said, Bblok X-5 Kav 2-3, Jakarta 12950
+              Menara Kadin Indonesia, 7<sub>th</sub> floor, JL. HR. Rasuna Said, Blok X-5 Kav 2-3, Jakarta 12950
             </p>
           </div>
           <div className={styles['email']}>

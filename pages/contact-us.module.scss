@@ -133,3 +133,51 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .container {
+    .contact-us-map {
+      flex-direction: column;
+      & > * {
+        width: 100%;
+      }
+      .company-address {
+        height: 100%;
+      }
+    }
+    .message-box {
+      form {
+        padding: 20px;
+        .input-group {
+          input,
+          textarea {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .message-box {
+    form {
+      .input-group {
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        .short-input {
+          width: 100%;
+        }
+        input,
+        textarea {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        textarea {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
