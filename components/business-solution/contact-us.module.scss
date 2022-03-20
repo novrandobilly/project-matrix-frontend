@@ -22,6 +22,7 @@
     margin: 0 0 30px;
   }
   form {
+    padding: 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +74,51 @@
       align-self: flex-end;
       &:hover {
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .message-box {
+    form {
+      padding: 0 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .message-box {
+    form {
+      padding: 0 20px;
+      .input-group {
+        input,
+        textarea {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .message-box {
+    form {
+      .input-group {
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        .short-input {
+          width: 100%;
+        }
+        input,
+        textarea {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        textarea {
+          height: 200px;
+        }
       }
     }
   }

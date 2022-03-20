@@ -87,3 +87,18 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding-top: 100px;
+  }
+  .single-carousel-container {
+    & > *:nth-child(2) {
+      min-height: 100%;
+    }
+  }
+
+  .testimony-item {
+    width: 80%;
+  }
+}

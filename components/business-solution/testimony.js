@@ -12,7 +12,7 @@ export default function Testimony() {
     <div className={styles['container']}>
       <CarouselProvider
         className={styles['single-carousel-container']}
-        naturalSlideWidth={100}
+        naturalSlideWidth={150}
         naturalSlideHeight={8}
         totalSlides={3}>
         <ButtonBack>&lt;</ButtonBack>

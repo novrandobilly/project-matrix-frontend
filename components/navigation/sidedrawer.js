@@ -8,9 +8,9 @@ export const Backdrop = ({ onCancel }) => {
 const Sidedrawer = ({ children, show, onCancel }) => {
   return (
     <CSSTransition in={show} timeout={400} classNames='slide-in-left' mountOnEnter unmountOnExit>
-      <aside className={styles['sidedrawer']} onClick={onCancel}>
+      <div className={styles['sidedrawer']} onClick={onCancel}>
         {children}
-      </aside>
+      </div>
     </CSSTransition>
   );
 };
