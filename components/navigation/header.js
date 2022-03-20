@@ -1,19 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
+import Sidedrawer from './sidedrawer';
+import { Backdrop } from './sidedrawer';
 import Image from 'next/image';
 import Link from 'next/link';
 import NavLink from './navLink';
-import Instagram from '../assets/icons/instagram.svg';
-import Building from '../assets/icons/building.svg';
-import Logo from '../assets/logo.png';
-import Phone from '../assets/icons/phone.svg';
+import Instagram from '../../assets/icons/instagram.svg';
+import Building from '../../assets/icons/building.svg';
+import Logo from '../../assets/logo.png';
+import LogoColor from '../../assets/logo-color.png';
+import Phone from '../../assets/icons/phone.svg';
 import styles from './header.module.scss';
 
 export default function Header() {
   const [isEnglish, setIsEnglish] = useState(true);
   const [supportDropdown, setSupportDropdown] = useState(false);
+  const [showSidedrawer, setShowSidedrawer] = useState(false);
   const supportDDref = useRef(null);
   const { pathname } = useRouter();
+
+  const openSidedrawerHandler = () => {
+    setShowSidedrawer(true);
+  };
+  const closeSidedrawerHandler = () => {
+    setShowSidedrawer(false);
+  };
 
   useEffect(() => {
     if (!supportDropdown) return;
@@ -94,11 +105,11 @@ export default function Header() {
             <NavLink href='/contact-us'>Contact Us</NavLink>
           </li>
           <li className={styles['support']}>
-            <p
+            <span
               className={supportDropdown ? styles['active'] : ''}
               onClick={() => setSupportDropdown((prevState) => !prevState)}>
               Support
-            </p>
+            </span>
             <ul ref={supportDDref} className={`${styles['support-dropdown']} ${!supportDropdown && styles['hide']}`}>
               <li>
                 <Link href='/support/cacti'>Cacti</Link>
@@ -115,13 +126,84 @@ export default function Header() {
             </ul>
           </li>
         </ul>
-        <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
-          <Image alt='Building' src={Building} width={15} height={15} />
-          <p>
-            <strong>
-              I&apos;m a <em>Business</em>
-            </strong>
-          </p>
+        <div className={styles['sidedrawer-menu']}>
+          <div className={styles['burger-icon']} onClick={openSidedrawerHandler}>
+            <div />
+            <div />
+            <div />
+          </div>
+          {showSidedrawer && <Backdrop onCancel={closeSidedrawerHandler} />}
+          <Sidedrawer show={showSidedrawer} onCancel={closeSidedrawerHandler}>
+            <Link passHref href='/'>
+              <div className={styles['side-logo-container']}>
+                <Image alt='Logo' src={LogoColor} width={100} height={45} />
+              </div>
+            </Link>
+            <ul className={styles['side-navigation-list']}>
+              <li>
+                <NavLink exact href='/product'>
+                  Product
+                </NavLink>
+              </li>
+              <li>
+                <NavLink href='/about-us'>Company</NavLink>
+              </li>
+              <li>
+                <NavLink href='/career'>Career</NavLink>
+              </li>
+              <li>
+                <NavLink href='/highlights'>Highlights</NavLink>
+              </li>
+              <li>
+                <NavLink href='/contact-us'>Contact Us</NavLink>
+              </li>
+              <li className={styles['support']}>
+                <span
+                  className={supportDropdown ? styles['active'] : ''}
+                  onClick={() => setSupportDropdown((prevState) => !prevState)}>
+                  Support
+                </span>
+                <ul ref={supportDDref} className={styles['side-support-dropdown']}>
+                  <li>
+                    <Link href='/support/cacti'>Cacti</Link>
+                  </li>
+                  <li>
+                    <Link href='/support/ip-transit'>IP-Transit</Link>
+                  </li>
+                  <li>
+                    <Link href='/support/mc-ix'>MC-IX</Link>
+                  </li>
+                  <li>
+                    <Link href='/support/looking-glass'>Looking Glass</Link>
+                  </li>
+                </ul>
+              </li>
+              <li className={styles['side-business-solution-container']}>
+                <Link href='/business-solution' passHref>
+                  <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
+                    <Image alt='Building' src={Building} width={15} height={15} />
+                    <p>
+                      <strong>
+                        I&apos;m a <em>Business</em>
+                      </strong>
+                    </p>
+                  </div>
+                </Link>
+              </li>
+            </ul>
+          </Sidedrawer>
+          <div className={styles['business-solution-container']}>
+            <Link href='/business-solution' passHref>
+              <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
+                <Image alt='Building' src={Building} width={15} height={15} />
+                <p>
+                  <strong>
+                    I&apos;m a <em>Business</em>
+                  </strong>
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

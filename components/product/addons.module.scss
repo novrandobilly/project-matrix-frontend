@@ -87,3 +87,22 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-bottom: 0;
+    .addons-list {
+      flex-direction: column;
+      .addons-card {
+        margin: 0 0 120px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-top: 40px;
+  }
+}

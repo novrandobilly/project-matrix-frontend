@@ -78,3 +78,39 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .faq {
+    .faq-group {
+      flex-direction: column;
+      width: 100%;
+      .faq-list {
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .faq {
+    h1,
+    h2 {
+      text-align: center;
+    }
+    padding: 0 20px 0;
+    .faq-group {
+      flex-direction: column;
+      width: 100%;
+      .faq-list {
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

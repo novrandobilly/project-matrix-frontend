@@ -87,6 +87,9 @@
   align-items: center;
   padding: 30px 0;
   .logo-container {
+    img {
+      min-width: 100px;
+    }
     &:hover {
       cursor: pointer;
     }
@@ -97,7 +100,6 @@
     max-width: 600px;
     list-style: none;
     padding: 0;
-    margin-left: 100px;
     display: flex;
     justify-content: space-between;
     a {
@@ -124,6 +126,7 @@
 
   .business-button,
   .business-button-red {
+    min-width: 175px;
     display: flex;
     align-items: center;
     background-color: #078141;
@@ -145,6 +148,10 @@
 .support {
   position: relative;
   z-index: 5;
+  span {
+    padding: 2px 10px;
+    border-radius: 30px;
+  }
   .support-dropdown {
     position: absolute;
     list-style: none;
@@ -185,5 +192,125 @@
   &:hover {
     background-color: #fff !important;
     color: #151a48;
+  }
+}
+
+.sidedrawer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger-icon {
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+  .navigation-bar {
+    .navigation-list {
+      display: none;
+    }
+  }
+
+  .sidedrawer-menu {
+    min-width: 225px;
+
+    .burger-icon {
+      display: flex;
+    }
+    .side-business-solution-container {
+      display: none;
+    }
+  }
+
+  .side-logo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .side-navigation-list {
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    & > * {
+      width: 100%;
+      padding: 10px 20px;
+      text-align: start;
+      border-bottom: 2px solid #151a483f;
+    }
+    .support {
+      border: none;
+      .side-support-dropdown {
+        list-style: none;
+        li {
+          padding: 10px 0;
+          font-size: 1rem;
+          border-bottom: 2px solid #151a483f;
+        }
+      }
+    }
+    span {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+  .contact-bar {
+    .contact-sub-bar {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      a,
+      p {
+        margin: 0;
+      }
+      .instagram {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .business-solution-container {
+    display: none;
+  }
+  .sidedrawer-menu {
+    justify-content: flex-end;
+    min-width: unset;
+    .side-business-solution-container {
+      display: flex;
+      font-size: 1rem;
+      color: #fff;
+    }
   }
 }

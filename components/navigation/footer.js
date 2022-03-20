@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../assets/logo-color.png';
-import Instagram from '../assets/icons/instagram-blue.svg';
-import Facebook from '../assets/icons/facebook-blue.svg';
-import Linkedin from '../assets/icons/linkedin-blue.svg';
+import Logo from '../../assets/logo-color.png';
+import Instagram from '../../assets/icons/instagram-blue.svg';
+import Facebook from '../../assets/icons/facebook-blue.svg';
+import Linkedin from '../../assets/icons/linkedin-blue.svg';
 import styles from './footer.module.scss';
 
 export default function footer() {

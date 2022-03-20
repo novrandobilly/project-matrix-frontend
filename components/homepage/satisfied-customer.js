@@ -24,8 +24,8 @@ export default function SatisfiedCustomer() {
     <div className={styles['container']}>
       <div className={styles['satisfied-customer']}>
         <div className={styles['title']}>
-          <h1>Our</h1>
-          <h1>Satisfied</h1>
+          <h1>Our&nbsp;</h1>
+          <h1>Satisfied&nbsp;</h1>
           <h1>Customer</h1>
         </div>
         <div className={styles['testimony']}>

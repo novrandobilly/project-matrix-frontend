@@ -17,11 +17,15 @@
   background-color: #151a48;
   color: #fff;
   border-radius: 20px 20px 0 0;
-  padding: 10px 0;
+  padding: 10px 20px;
   position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  p {
+    text-align: center;
+    margin-right: 20px;
+  }
   button {
     width: 100%;
     max-width: 200px;
@@ -37,4 +41,18 @@
     }
   }
   z-index: 10;
+}
+
+@media screen and (max-width: 900px) {
+  .registration-fixed-box {
+    p {
+      font-size: 0.8rem;
+      margin: 0 20px 0 0;
+    }
+    button {
+      font-size: 1rem;
+      max-width: 150px;
+      padding: 5px 0;
+    }
+  }
 }
