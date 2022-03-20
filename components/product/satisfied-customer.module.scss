@@ -45,6 +45,7 @@
       align-items: center;
       .avatar {
         width: 15%;
+        min-width: 100px;
         img {
           border: 1px solid #ec4176 !important;
           border-radius: 50%;
@@ -67,6 +68,7 @@
       }
       .testimony-nav {
         width: 15%;
+        min-width: 75px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -75,6 +77,70 @@
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .satisfied-customer {
+    .title {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .satisfied-customer {
+    padding: 0 40px 100px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .testimony {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .satisfied-customer {
+    padding: 0 20px 75px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .satisfied-customer {
+    padding: 0 20px 75px;
+    .title {
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+    .testimony {
+      .customer-data {
+        flex-direction: column;
+        align-items: center;
+        .name-job {
+          width: 100%;
+          h2 {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .text {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .rating {
+        max-width: none;
+        margin: 0 auto 30px;
       }
     }
   }

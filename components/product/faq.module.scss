@@ -78,3 +78,70 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .faq {
+    .faq-group {
+      flex-direction: column;
+      width: 100%;
+      .faq-list {
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .faq {
+    h1,
+    h2 {
+      text-align: center;
+    }
+    padding: 0 20px 0;
+    .faq-group {
+      flex-direction: column;
+      width: 100%;
+      .faq-list {
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .satisfied-customer {
+    .title {
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+    .testimony {
+      .customer-data {
+        flex-direction: column;
+        align-items: center;
+        .name-job {
+          width: 100%;
+          h2 {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .text {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .rating {
+        max-width: none;
+        margin: 0 auto 30px;
+      }
+    }
+  }
+}
