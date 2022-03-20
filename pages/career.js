@@ -60,7 +60,7 @@ export default function Home() {
         <CarouselProvider
           className={styles['single-carousel-container']}
           naturalSlideWidth={100}
-          naturalSlideHeight={8}
+          naturalSlideHeight={12}
           totalSlides={3}>
           <ButtonBack>&lt;</ButtonBack>
           <Slider>

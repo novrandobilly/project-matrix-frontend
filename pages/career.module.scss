@@ -138,3 +138,40 @@
     }
   }
 }
+
+@media screen and (max-width: 699px) {
+  .container {
+    .multi-carousel-container {
+      padding: 0 40px;
+    }
+
+    .single-carousel {
+      .single-carousel-container {
+        padding: 0 10px;
+        & > * {
+          height: 150px;
+          margin: 0 10px;
+        }
+
+        & > *:first-child,
+        & > *:last-child {
+          height: 25px;
+          margin: 0;
+        }
+        .carousel-item {
+          .text-container {
+            padding: 0 10px;
+            width: 75%;
+            height: 150px;
+            font-size: 0.9rem;
+          }
+
+          img {
+            width: 25%;
+            height: 150px !important;
+          }
+        }
+      }
+    }
+  }
+}
