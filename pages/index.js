@@ -32,9 +32,3 @@ export default function Home() {
     </div>
   );
 }
-
-export const getServerSideProps = async (context) => {
-  return {
-    props: {},
-  };
-};

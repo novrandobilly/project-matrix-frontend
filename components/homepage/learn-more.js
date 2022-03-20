@@ -19,7 +19,9 @@ export default function LearnMore() {
             <strong>Learn More</strong>
           </button>
         </div>
-        <Image alt='Speed Test' src={SpeedTest} width={600} height={450} />
+        <div className={styles['image-container']}>
+          <Image alt='Speed Test' src={SpeedTest} width={600} height={450} />
+        </div>
       </div>
       <div className={`${styles['learn-more']} ${styles['learn-more-2']}`}>
         <div className={styles['description']}>
@@ -33,7 +35,9 @@ export default function LearnMore() {
             <strong>Learn More</strong>
           </button>
         </div>
-        <Image alt='Game Day' src={GameDay} width={700} height={525} />
+        <div className={styles['image-container']}>
+          <Image alt='Game Day' src={GameDay} width={700} height={525} />
+        </div>
       </div>
     </div>
   );

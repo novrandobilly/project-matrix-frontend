@@ -59,3 +59,64 @@
     text-align: end;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 40px 150px;
+  }
+
+  .learn-more {
+    .description {
+      padding: 40px 20px 0 0;
+    }
+  }
+
+  .learn-more-2 {
+    .description {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .learn-more {
+    flex-direction: column;
+    .description {
+      order: 2;
+      width: 100%;
+      padding: 0;
+      align-items: center;
+
+      p {
+        margin: 0 0 20px;
+      }
+    }
+    .image-container {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .learn-more-button {
+      padding: 10px;
+    }
+  }
+
+  .learn-more-2 {
+    margin-top: 60px;
+    .description {
+      margin: 0;
+      align-items: center;
+    }
+    p,
+    h1 {
+      width: 100%;
+      text-align: start;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 0 20px 100px;
+  }
+}
