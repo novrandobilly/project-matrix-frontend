@@ -15,8 +15,10 @@ import styles from './header.module.scss';
 export default function Header() {
   const [isEnglish, setIsEnglish] = useState(true);
   const [supportDropdown, setSupportDropdown] = useState(false);
+  const [productDropdown, setProductDropdown] = useState(false);
   const [showSidedrawer, setShowSidedrawer] = useState(false);
   const supportDDref = useRef(null);
+  const productDDref = useRef(null);
   const { pathname } = useRouter();
 
   const openSidedrawerHandler = () => {
@@ -26,18 +28,21 @@ export default function Header() {
     setShowSidedrawer(false);
   };
 
-  useEffect(() => {
-    if (!supportDropdown) return;
+  // useEffect(() => {
+  //   if (!supportDropdown && !productDropdown) return;
 
-    function handleClick(event) {
-      if (supportDDref.current && !supportDDref.current.contains(event.target)) {
-        setSupportDropdown(false);
-      }
-    }
-    window.addEventListener('click', handleClick);
+  //   function handleClick(event) {
+  //     if (supportDDref.current && !supportDDref.current.contains(event.target)) {
+  //       setSupportDropdown(false);
+  //     }
+  //     if (productDDref.current && !productDDref.current.contains(event.target)) {
+  //       setProductDropdown(false);
+  //     }
+  //   }
+  //   window.addEventListener('click', handleClick);
 
-    return () => window.removeEventListener('click', handleClick);
-  }, [supportDropdown]);
+  //   return () => window.removeEventListener('click', handleClick);
+  // }, [supportDropdown, productDropdown]);
 
   let isBusinessSolution = false;
   if (pathname === '/business-solution') {
@@ -87,10 +92,24 @@ export default function Header() {
           </div>
         </Link>
         <ul className={styles['navigation-list']}>
-          <li>
+          {/* <li>
             <NavLink exact href='/product'>
               Product
             </NavLink>
+          </li> */}
+          <li
+            className={styles['product']}
+            onMouseEnter={() => setProductDropdown(true)}
+            onMouseLeave={() => setProductDropdown(false)}>
+            <span className={productDropdown ? styles['active'] : ''}>Product</span>
+            <ul ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
+              <li>
+                <Link href='/product/'>Broadband</Link>
+              </li>
+              <li>
+                <Link href='/product/corporate'>Corporate</Link>
+              </li>
+            </ul>
           </li>
           <li>
             <NavLink href='/about-us'>Company</NavLink>
@@ -104,12 +123,11 @@ export default function Header() {
           <li>
             <NavLink href='/contact-us'>Contact Us</NavLink>
           </li>
-          <li className={styles['support']}>
-            <span
-              className={supportDropdown ? styles['active'] : ''}
-              onClick={() => setSupportDropdown((prevState) => !prevState)}>
-              Support
-            </span>
+          <li
+            className={styles['support']}
+            onMouseEnter={() => setSupportDropdown(true)}
+            onMouseLeave={() => setSupportDropdown(false)}>
+            <span className={supportDropdown ? styles['active'] : ''}>Support</span>
             <ul ref={supportDDref} className={`${styles['support-dropdown']} ${!supportDropdown && styles['hide']}`}>
               <li>
                 <Link href='/support/cacti'>Cacti</Link>
@@ -183,9 +201,7 @@ export default function Header() {
                   <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
                     <Image alt='Building' src={Building} width={15} height={15} />
                     <p>
-                      <strong>
-                        I&apos;m a <em>Business</em>
-                      </strong>
+                      <strong>Corporate</strong>
                     </p>
                   </div>
                 </Link>
@@ -197,9 +213,7 @@ export default function Header() {
               <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
                 <Image alt='Building' src={Building} width={15} height={15} />
                 <p>
-                  <strong>
-                    I&apos;m a <em>Business</em>
-                  </strong>
+                  <strong>Corporate</strong>
                 </p>
               </div>
             </Link>
