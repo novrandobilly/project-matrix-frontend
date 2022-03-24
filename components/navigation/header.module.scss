@@ -126,10 +126,10 @@
 
   .business-button,
   .business-button-red {
-    min-width: 175px;
+    min-width: 145px;
     display: flex;
     align-items: center;
-    background-color: #078141;
+    background-color: #fdb515;
     padding: 7px 20px;
     border-radius: 50px;
     p {
@@ -145,23 +145,28 @@
   }
 }
 
-.support {
+.support,
+.product {
   position: relative;
   z-index: 5;
   span {
     padding: 2px 10px;
     border-radius: 30px;
+    &:hover {
+      cursor: pointer;
+    }
   }
-  .support-dropdown {
+  .support-dropdown,
+  .product-dropdown {
     position: absolute;
     list-style: none;
     width: 200px;
     z-index: 10;
     padding: 0;
-    background-color: #fff;
+    background-color: transparent;
     color: #151a48;
-    transform: translateY(5%);
     transition: all 0.2s ease-in-out;
+    padding: 15px 0 0;
     li {
       width: 100%;
       display: flex;
@@ -172,12 +177,14 @@
       width: 100%;
       padding: 10px 20px;
       transition: all 0.2s ease-in-out;
+      background-color: #fff;
       &:hover {
         background-color: #151a48 !important;
         color: #fff;
       }
     }
   }
+
   .hide {
     transform: translateY(-50%);
     opacity: 0;
