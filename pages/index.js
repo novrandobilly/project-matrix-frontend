@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Banner from '../components/utils/banner';
-import PlanPackage from '../components/homepage/plan-package';
+import PlanPackage from '../components/product/plan-package';
 import LearnMore from '../components/homepage/learn-more';
 import SatisfiedCustomer from '../components/homepage/satisfied-customer';
 
-export default function Home() {
+export default function Home({ FAQs }) {
+  console.log(FAQs);
   return (
     <div>
       <Head>
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Banner />
-      <PlanPackage />
+      {/* <PlanPackage /> */}
       <section className={styles['learn-more-container']}>
         <LearnMore />
       </section>
@@ -32,3 +33,23 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async (context) => {
+  try {
+    const resFAQ = await fetch('https://matrix-webapi.staging.byteforce.id/api/public/faqs/all?lang=en', {
+      method: 'GET',
+    });
+    const resFAQ_JSON = await resFAQ.json();
+    const FAQData = JSON.parse(JSON.stringify(resFAQ_JSON));
+    return {
+      props: {
+        FAQs: FAQData.data,
+      },
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      props: {},
+    };
+  }
+};

@@ -4,7 +4,7 @@ import CheckBlue from '../../assets/icons/check-blue.svg';
 import CheckRed from '../../assets/icons/check-red.svg';
 import styles from './plan-package.module.scss';
 
-export default function PlanPackage() {
+export default function PlanPackage({ products }) {
   return (
     <div className={styles['container']}>
       <div className={styles['title']}>
@@ -18,7 +18,7 @@ export default function PlanPackage() {
       <div className={styles['plan-option']}>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
-            <h3>Regular</h3>
+            <h3>{products[0].product_name}</h3>
             <p>
               <strong>DISC 50%</strong>
             </p>
@@ -61,7 +61,7 @@ export default function PlanPackage() {
 
         <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
-            <h3>Premium</h3>
+            <h3>{products[1].product_name}</h3>
             <p>
               <strong>DISC 50%</strong>
             </p>
@@ -104,7 +104,7 @@ export default function PlanPackage() {
 
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
-            <h3>Boost</h3>
+            <h3>{products[2].product_name}</h3>
             <p>
               <strong>DISC 50%</strong>
             </p>

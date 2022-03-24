@@ -9,7 +9,7 @@ import Banner from '../components/utils/banner';
 
 import styles from './about-us.module.scss';
 
-export default function Home() {
+export default function AboutUS() {
   return (
     <div className={styles['container']}>
       <Head>

@@ -6,7 +6,7 @@ import Location from '../assets/icons/location.svg';
 import Mail from '../assets/icons/mail.svg';
 import styles from './contact-us.module.scss';
 
-export default function Home() {
+export default function ContactUs() {
   const nameRef = useRef(null);
   const phoneRef = useRef(null);
   const emailRef = useRef(null);

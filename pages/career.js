@@ -31,7 +31,8 @@ const responsive = {
   },
 };
 
-export default function Home() {
+export default function Career({ products }) {
+  console.log(products);
   return (
     <div className={styles['container']}>
       <Head>
@@ -164,3 +165,20 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async (context) => {
+  const res = await fetch(
+    'https://matrix-webapi.staging.byteforce.id/api/public/careers/paginate?page=1&size=10&lang=en',
+    {
+      method: 'GET',
+    }
+  );
+  const resJSON = await res.json();
+
+  return {
+    props: {
+      products: resJSON.data,
+    },
+    revalidate: 3600,
+  };
+};
