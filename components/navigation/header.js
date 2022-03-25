@@ -130,16 +130,24 @@ export default function Header() {
             <span className={supportDropdown ? styles['active'] : ''}>Support</span>
             <ul ref={supportDDref} className={`${styles['support-dropdown']} ${!supportDropdown && styles['hide']}`}>
               <li>
-                <Link href='/support/cacti'>Cacti</Link>
+                <a target='_blank' rel='noreferrer' href='https://cacti.nap.net.id/'>
+                  Cacti
+                </a>
               </li>
               <li>
-                <Link href='/support/ip-transit'>IP-Transit</Link>
+                <a target='_blank' rel='noreferrer' href='https://mcs.nap.net.id/'>
+                  IP-Transit
+                </a>
               </li>
               <li>
-                <Link href='/support/mc-ix'>MC-IX</Link>
+                <a target='_blank' rel='noreferrer' href='https://mcsix.nap.net.id/'>
+                  MC-IX
+                </a>
               </li>
               <li>
-                <Link href='/support/looking-glass'>Looking Glass</Link>
+                <a target='_blank' rel='noreferrer' href='https://lg.napinfo.co.id/'>
+                  Looking Glass
+                </a>
               </li>
             </ul>
           </li>
@@ -183,16 +191,24 @@ export default function Header() {
                 </span>
                 <ul ref={supportDDref} className={styles['side-support-dropdown']}>
                   <li>
-                    <Link href='/support/cacti'>Cacti</Link>
+                    <a target='_blank' rel='noreferrer' href='https://cacti.nap.net.id/'>
+                      Cacti
+                    </a>
                   </li>
                   <li>
-                    <Link href='/support/ip-transit'>IP-Transit</Link>
+                    <a target='_blank' rel='noreferrer' href='https://mcs.nap.net.id/'>
+                      IP-Transit
+                    </a>
                   </li>
                   <li>
-                    <Link href='/support/mc-ix'>MC-IX</Link>
+                    <a target='_blank' rel='noreferrer' href='https://mcsix.nap.net.id/'>
+                      MC-IX
+                    </a>
                   </li>
                   <li>
-                    <Link href='/support/looking-glass'>Looking Glass</Link>
+                    <a target='_blank' rel='noreferrer' href='https://lg.napinfo.co.id/'>
+                      Looking Glass
+                    </a>
                   </li>
                 </ul>
               </li>
