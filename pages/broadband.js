@@ -8,9 +8,9 @@ import PlanPackage from '../components/product/plan-package';
 import TermConditions from '../components/product/term-conditions';
 import FAQ from '../components/product/faq';
 import AddOns from '../components/product/addons';
-import styles from './product.module.scss';
+import styles from './broadband.module.scss';
 
-export default function Product({ allActiveProducts, paginateActiveProducts, FAQs, promoBanner }) {
+export default function Broadband({ allActiveProducts, paginateActiveProducts, FAQs, promoBanner }) {
   const { products } = allActiveProducts;
   // console.log(allActiveProducts);
   // console.log(paginateActiveProducts);
@@ -19,13 +19,13 @@ export default function Product({ allActiveProducts, paginateActiveProducts, FAQ
   return (
     <div>
       <Head>
-        <title>Product</title>
+        <title>Broadband</title>
         <meta name='description' content='Matrix Product Page' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Banner
         bannerSource={[ProductBanner, ProductBanner, ProductBanner, ProductBanner, ProductBanner]}
-        alt='Product Banner'
+        alt='Broadband Banner'
         style={{ paddingBottom: '50px' }}
       />
       <section className={styles['satisfied-customer-container']}>
@@ -45,6 +45,15 @@ export default function Product({ allActiveProducts, paginateActiveProducts, FAQ
           </button>
         </div>
       </section> */}
+      <div className={styles['registration-fixed-box']}>
+        <p>
+          The First Protected Broadband Solution In Indonesia! Money Back Guarantee If Connection Problems Occur. FREE
+          INSTALLATION FEE &amp; WIFI ROUTER!
+        </p>
+        <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+          <button>Daftar Sekarang!</button>
+        </a>
+      </div>
     </div>
   );
 }

@@ -83,26 +83,7 @@ export default function Header() {
             <span className={productDropdown ? styles['active'] : ''}>Product</span>
             <ul ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
               <li className={styles['product-dropdown-container']}>
-                <div className={styles['broadband-corporate-title']}>
-                  <span>Broadband</span>
-                </div>
-                <ul className={styles['sub-dropdown']}>
-                  <li>
-                    <Link href='/product'>Broadband Product</Link>
-                  </li>
-                  <li>
-                    <Link href='/product'>Broadband Product</Link>
-                  </li>
-                  <li>
-                    <Link href='/product'>Broadband Product</Link>
-                  </li>
-                  <li>
-                    <Link href='/product'>Broadband Product</Link>
-                  </li>
-                  <li>
-                    <Link href='/product'>Broadband Product</Link>
-                  </li>
-                </ul>
+                <Link href='/broadband'>Broadband</Link>
               </li>
               <li className={styles['product-dropdown-container']}>
                 <div className={styles['broadband-corporate-title']}>
@@ -110,19 +91,25 @@ export default function Header() {
                 </div>
                 <ul className={styles['sub-dropdown']}>
                   <li>
-                    <Link href='/corporate'>Corporate Product</Link>
+                    <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
                   </li>
                   <li>
-                    <Link href='/corporate'>Corporate Product</Link>
+                    <Link href='/highlights/ip-transit'>IP Transit</Link>
                   </li>
                   <li>
-                    <Link href='/corporate'>Corporate Product</Link>
+                    <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>MC-IX</Link>
                   </li>
                   <li>
-                    <Link href='/corporate'>Corporate Product</Link>
+                    <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
                   </li>
                   <li>
-                    <Link href='/corporate'>Corporate Product</Link>
+                    <Link href='/corporate'>Matrix Line</Link>
+                  </li>
+                  <li>
+                    <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
+                  </li>
+                  <li>
+                    <Link href='/highlights/matrix-cloud'>Matrix Cloud</Link>
                   </li>
                 </ul>
               </li>
@@ -184,8 +171,8 @@ export default function Header() {
             </Link>
             <ul className={styles['side-navigation-list']}>
               <li>
-                <NavLink exact href='/product'>
-                  Product
+                <NavLink exact href='/broadband'>
+                  Broadband
                 </NavLink>
               </li>
               <li>

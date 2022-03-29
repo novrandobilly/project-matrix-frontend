@@ -7,6 +7,7 @@ import Heartfelt from '../assets/company-values/heartfelt.png';
 import OneSpirit from '../assets/company-values/one-spirit.png';
 import Responsive from '../assets/company-values/responsive.png';
 import Synergy from '../assets/company-values/synergy.png';
+import Milestones from '../assets/milestones.jpg';
 import Banner from '../components/utils/banner';
 
 import styles from './about-us.module.scss';
@@ -94,6 +95,9 @@ export default function AboutUS() {
           </div>
         </div>
       </section>
+      <div className={styles['milestones-container']}>
+        <Image src={Milestones} alt='Milestone' width={1536} height={1000} />
+      </div>
     </div>
   );
 }

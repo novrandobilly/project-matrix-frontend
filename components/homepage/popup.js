@@ -10,22 +10,16 @@ const Popup = ({ show, onCancel }) => {
     <CSSTransition in={show} timeout={400} classNames='slide-in-top' mountOnEnter unmountOnExit>
       <div className={styles['popup']} onClick={onCancel}>
         <Image src={LettersAround} alt='Letters Around' width={250} height={275} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deleniti, dolorem soluta voluptatum fuga sit
-          veritatis tempore incidunt aperiam. Officiis alias maiores tempore sed soluta.
-        </p>
+        <h4>NEW LOOK, NEW FEEL, SAME HIGH-QUALITY DIGITAL SOLUTION.</h4>
+        <p>Maximize Your Digital Experience With Us.</p>
+        <p>Connecting You Faster To The World.</p>
+        <p>Please Choose One Of The Solution:</p>
         <div className={styles['button-container']}>
           <Link href='/corporate' passHref>
-            <button className={styles['corporate']}>
-              <Image src={Building} width={20} height={20} alt='Building' />
-              <span>Corporate</span>
-            </button>
+            <button className={styles['corporate']}>Corporate</button>
           </Link>
-          <Link href='/product' passHref>
-            <button className={styles['broadband']}>
-              <Image src={Building} width={20} height={20} alt='Building' />
-              <span>Broadband</span>
-            </button>
+          <Link href='/broadband' passHref>
+            <button className={styles['broadband']}>Broadband</button>
           </Link>
         </div>
         <p className={styles['close']}>Close</p>

@@ -35,8 +35,8 @@ export default function Home({ FAQs }) {
 
       <div className={styles['registration-fixed-box']}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non consectetur asperiores accusamus dicta
-          in qui magni sapiente excepturi temporibus.
+          The First Protected Broadband Solution In Indonesia! Money Back Guarantee If Connection Problems Occur. FREE
+          INSTALLATION FEE &amp; WIFI ROUTER!
         </p>
         <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
           <button>Daftar Sekarang!</button>

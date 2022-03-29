@@ -14,9 +14,9 @@ export default function footer() {
         <div className={styles['submenu']}>
           <div className={styles['link-list']}>
             <h3>Product</h3>
-            <Link href='/product'>Product</Link>
-            <Link href='/product'>Product</Link>
-            <Link href='/product'>Product</Link>
+            <Link href='/broadband'>Product</Link>
+            <Link href='/broadband'>Product</Link>
+            <Link href='/broadband'>Product</Link>
           </div>
           <div className={styles['link-list']}>
             <h3>Company</h3>

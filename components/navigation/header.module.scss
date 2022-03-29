@@ -164,12 +164,24 @@
     background-color: transparent;
     color: #151a48;
     transition: all 0.2s ease-in-out;
-    padding: 15px 0 0;
     right: 0;
+    padding-top: 20px;
+
     li {
       width: 100%;
       display: flex;
       align-items: center;
+      padding: 5px 10px;
+      background-color: #fff;
+      &:first-child {
+        border-radius: 10px 10px 0 0;
+        padding-top: 10px;
+      }
+
+      &:last-child {
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 10px;
+      }
     }
     a {
       border-radius: 0;
@@ -199,6 +211,7 @@
     position: absolute;
     list-style: none;
     width: 450px;
+    font-weight: 700;
     z-index: 10;
     padding: 0;
     background-color: transparent;
@@ -221,11 +234,17 @@
         display: flex;
         justify-content: flex-start;
         font-weight: 700;
+        min-width: 200px;
+        padding: 10px;
+        span:hover {
+          cursor: default;
+        }
       }
     }
     .sub-dropdown {
       list-style: none;
       padding: 0;
+      font-weight: 400;
     }
     li {
       width: 100%;
