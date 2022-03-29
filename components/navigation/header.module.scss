@@ -241,7 +241,7 @@
     .burger-icon {
       display: flex;
     }
-    .side-business-solution-container {
+    .side-corporate-container {
       display: none;
     }
   }
@@ -308,13 +308,13 @@
 }
 
 @media screen and (max-width: 450px) {
-  .business-solution-container {
+  .corporate-container {
     display: none;
   }
   .sidedrawer-menu {
     justify-content: flex-end;
     min-width: unset;
-    .side-business-solution-container {
+    .side-corporate-container {
       display: flex;
       font-size: 1rem;
       color: #fff;

@@ -28,7 +28,9 @@ export default function Home({ FAQs }) {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non consectetur asperiores accusamus dicta
           in qui magni sapiente excepturi temporibus.
         </p>
-        <button>Daftar Sekarang!</button>
+        <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+          <button>Daftar Sekarang!</button>
+        </a>
       </div>
     </div>
   );
