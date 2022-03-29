@@ -121,9 +121,9 @@ export default function Header() {
           <li>
             <NavLink href='/career'>Career</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink href='/highlights'>Highlights</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink href='/contact-us'>Contact Us</NavLink>
           </li>
@@ -181,9 +181,9 @@ export default function Header() {
               <li>
                 <NavLink href='/career'>Career</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink href='/highlights'>Highlights</NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink href='/contact-us'>Contact Us</NavLink>
               </li>

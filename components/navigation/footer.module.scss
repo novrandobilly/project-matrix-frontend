@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  padding: 50px 100px;
+  padding: 50px 100px 100px;
   max-width: 1536px;
   margin: auto;
   background-color: #f5f6f8;
@@ -23,6 +23,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    &:hover {
+      cursor: pointer;
+    }
   }
   h3 {
     margin: 0 0 10px;
@@ -42,11 +45,48 @@
     font-size: 0.8rem;
   }
 
-  .social-media {
-    width: 100%;
-    max-width: 125px;
+  .social-media-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-self: stretch;
+    margin-right: 20px;
+    h4 {
+      margin: 0;
+    }
+    .social-media {
+      width: 100%;
+      max-width: 125px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.copyrights {
+  .image-container {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  p {
+    padding-left: 10px;
+  }
+}
+
+.connect-with-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .customer-care {
+    width: 100%;
+    max-width: 150px;
   }
 }
 

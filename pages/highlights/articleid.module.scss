@@ -1,13 +1,20 @@
 .container {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 100px;
   background-color: #151a48;
-  max-width: 1536px;
   color: #fff;
 }
+.back-link {
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto 20px;
+  padding: 0 100px;
+}
 .article-container {
+  max-width: 1536px;
   padding: 30px 0;
+  background-color: #151a48;
+  margin: 0 auto;
+  padding: 0 100px;
 }
 .article-image-main {
   width: 100%;

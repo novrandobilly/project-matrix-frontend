@@ -7,7 +7,9 @@ import styles from './articleid.module.scss';
 export default function Article() {
   return (
     <div className={styles['container']}>
-      <Link href='/highlights'>Back to highlights</Link>
+      <div className={styles['back-link']}>
+        <Link href='/'>&lt; Back to highlights</Link>
+      </div>
       <div className={styles['article-container']}>
         <div className={styles['article-image-main']}>
           <Image src={Chatting} width={800} height={400} alt='Chatting' />
