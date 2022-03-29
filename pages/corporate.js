@@ -5,7 +5,7 @@ import BannerBS from '../components/business-solution/bannerBS';
 import PlanPackage from '../components/business-solution/plan-package';
 import ContactUs from '../components/business-solution/contact-us';
 
-import styles from './business-solution.module.scss';
+import styles from './corporate.module.scss';
 
 export default function BusinessSolution() {
   return (

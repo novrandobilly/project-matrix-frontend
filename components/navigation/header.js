@@ -45,7 +45,7 @@ export default function Header() {
   // }, [supportDropdown, productDropdown]);
 
   let isBusinessSolution = false;
-  if (pathname === '/business-solution') {
+  if (pathname === '/corporate') {
     isBusinessSolution = true;
   }
 
@@ -212,8 +212,8 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
-              <li className={styles['side-business-solution-container']}>
-                <Link href='/business-solution' passHref>
+              <li className={styles['side-corporate-container']}>
+                <Link href='/corporate' passHref>
                   <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
                     <Image alt='Building' src={Building} width={15} height={15} />
                     <p>
@@ -224,8 +224,8 @@ export default function Header() {
               </li>
             </ul>
           </Sidedrawer>
-          <div className={styles['business-solution-container']}>
-            <Link href='/business-solution' passHref>
+          <div className={styles['corporate-container']}>
+            <Link href='/corporate' passHref>
               <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
                 <Image alt='Building' src={Building} width={15} height={15} />
                 <p>
