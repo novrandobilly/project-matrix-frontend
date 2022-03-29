@@ -56,7 +56,7 @@ export default function SatisfiedCustomer() {
           </div>
         </div>
       </div>
-      <div className={styles['faq']}>
+      {/* <div className={styles['faq']}>
         <h1>Frequently Asked Questions</h1>
         <div className={styles['faq-group']}>
           <div className={styles['faq-list']}>
@@ -154,7 +154,7 @@ export default function SatisfiedCustomer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

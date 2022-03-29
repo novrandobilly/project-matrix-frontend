@@ -9,11 +9,14 @@ export default function LearnMore() {
     <div className={styles['container']}>
       <div className={styles['learn-more']}>
         <div className={styles['description']}>
-          <h1>Lorem Ipsum Dolor Sit</h1>
+          <h1>Who We Are</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam id eos optio consectetur inventore
-            perferendis dolore distinctio, reiciendis ducimus quos eveniet cum rem veritatis nulla. Voluptas debitis qui
-            consequuntur!
+            PT NAP Info Lintas Nusa (Matrix NAP Info) is a prominent telecommunication company with more than 20 years
+            experience di Indonesia. We also conjointly operate sub-sea fiber optic infrastructures with Singapore –
+            based, Matrix Networks Pte. Ltd., and initiated our very own internet exchange that has become one of the
+            largest internet exchanges of the country. With an integrated ecosystem of both Network &amp; Managed
+            Service Provider, Matrix NAP Info has set to commit delivering solutions for businesses and engineering the
+            future.
           </p>
           <button className={styles['learn-more-button']}>
             <strong>Learn More</strong>
@@ -25,11 +28,11 @@ export default function LearnMore() {
       </div>
       <div className={`${styles['learn-more']} ${styles['learn-more-2']}`}>
         <div className={styles['description']}>
-          <h1>Lorem Ipsum Dolor Sit</h1>
+          <h1>Perfect Solutions For Your Digital Lifestyle</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam id eos optio consectetur inventore
-            perferendis dolore distinctio, reiciendis ducimus quos eveniet cum rem veritatis nulla. Voluptas debitis qui
-            consequuntur!
+            Maximize your digital lifestyle experience with the top-notch solution in its class. Connecting faster to
+            the world through global content without barriers and without limits. A quality internet network, at ease,
+            and the only protected broadband with compensation guarantee in Indonesia
           </p>
           <button className={styles['learn-more-button']}>
             <strong>Learn More</strong>

@@ -5,6 +5,7 @@ import ProductBanner from '../assets/product-banner.png';
 import Banner from '../components/utils/banner';
 import SatisfiedCustomer from '../components/product/satisfied-customer';
 import PlanPackage from '../components/product/plan-package';
+import TermConditions from '../components/product/term-conditions';
 import FAQ from '../components/product/faq';
 import AddOns from '../components/product/addons';
 import styles from './product.module.scss';
@@ -32,7 +33,8 @@ export default function Product({ allActiveProducts, paginateActiveProducts, FAQ
       </section>
       <PlanPackage products={products} />
       <AddOns />
-      <section className={styles['faq-container']}>
+      <TermConditions />
+      {/* <section className={styles['faq-container']}>
         <FAQ />
         <div className={styles['faq-contact-us']}>
           <h2>Hubungi Kami</h2>
@@ -40,7 +42,7 @@ export default function Product({ allActiveProducts, paginateActiveProducts, FAQ
             1-500-XXX <Image alt='Phone' src={Phone} width={30} height={30} />
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

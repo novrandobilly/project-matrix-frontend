@@ -59,7 +59,7 @@ export default function Header() {
 
   return (
     <div className={styles['container']}>
-      <div className={styles['contact-bar']}>
+      {/* <div className={styles['contact-bar']}>
         <div className={styles['language-toggle']}>
           <p>Language</p>
           <div className={styles['toggle-button']}>
@@ -84,7 +84,7 @@ export default function Header() {
             <p>021-1500787</p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles['navigation-bar']}>
         <Link passHref href='/'>
           <div className={styles['logo-container']}>
@@ -103,11 +103,49 @@ export default function Header() {
             onMouseLeave={() => setProductDropdown(false)}>
             <span className={productDropdown ? styles['active'] : ''}>Product</span>
             <ul ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
-              <li>
-                <Link href='/product/'>Broadband</Link>
+              <li className={styles['product-dropdown-container']}>
+                <div className={styles['broadband-corporate-title']}>
+                  <span>Broadband</span>
+                </div>
+                <ul className={styles['sub-dropdown']}>
+                  <li>
+                    <Link href='/product'>Broadband Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/product'>Broadband Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/product'>Broadband Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/product'>Broadband Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/product'>Broadband Product</Link>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <Link href='/product/corporate'>Corporate</Link>
+              <li className={styles['product-dropdown-container']}>
+                <div className={styles['broadband-corporate-title']}>
+                  <span>Corporate</span>
+                </div>
+                <ul className={styles['sub-dropdown']}>
+                  <li>
+                    <Link href='/corporate'>Corporate Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/corporate'>Corporate Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/corporate'>Corporate Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/corporate'>Corporate Product</Link>
+                  </li>
+                  <li>
+                    <Link href='/corporate'>Corporate Product</Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
@@ -212,7 +250,7 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
-              <li className={styles['side-corporate-container']}>
+              {/* <li className={styles['side-corporate-container']}>
                 <Link href='/corporate' passHref>
                   <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
                     <Image alt='Building' src={Building} width={15} height={15} />
@@ -221,20 +259,20 @@ export default function Header() {
                     </p>
                   </div>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </Sidedrawer>
-          <div className={styles['corporate-container']}>
-            <Link href='/corporate' passHref>
-              <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
-                <Image alt='Building' src={Building} width={15} height={15} />
-                <p>
-                  <strong>Corporate</strong>
-                </p>
-              </div>
-            </Link>
-          </div>
         </div>
+        {/* <div className={styles['corporate-container']}>
+          <Link href='/corporate' passHref>
+            <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
+              <Image alt='Building' src={Building} width={15} height={15} />
+              <p>
+                <strong>Corporate</strong>
+              </p>
+            </div>
+          </Link>
+        </div> */}
       </div>
     </div>
   );

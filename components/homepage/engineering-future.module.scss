@@ -1,0 +1,44 @@
+.container {
+  background: linear-gradient(#151a48 50%, #f5f6f8 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 15px #000;
+  border-radius: 15px;
+  min-height: 250px;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  img {
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.text-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-self: stretch;
+  max-width: 500px;
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .tag {
+    font-weight: 700;
+  }
+}

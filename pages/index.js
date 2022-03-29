@@ -1,12 +1,17 @@
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Banner from '../components/utils/banner';
-import PlanPackage from '../components/product/plan-package';
+// import PlanPackage from '../components/product/plan-package';
+import EngineeringFuture from '../components/homepage/engineering-future';
+import Anniversary from '../assets/home-banner/Anniversary.png';
+import InternetMati from '../assets/home-banner/Internet_Mati_Uang_Kembali.png';
+import MCIX from '../assets/home-banner/MCIX.png';
+import MCS from '../assets/home-banner/MCS.png';
+import Ramadhan from '../assets/home-banner/Ramadhan.png';
 import LearnMore from '../components/homepage/learn-more';
 import SatisfiedCustomer from '../components/homepage/satisfied-customer';
 
 export default function Home({ FAQs }) {
-  console.log(FAQs);
   return (
     <div>
       <Head>
@@ -14,7 +19,8 @@ export default function Home({ FAQs }) {
         <meta name='description' content='Matrix Homepage' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Banner />
+      <Banner bannerSource={[Anniversary, InternetMati, MCIX, MCS, Ramadhan]} />
+      <EngineeringFuture />
       {/* <PlanPackage /> */}
       <section className={styles['learn-more-container']}>
         <LearnMore />
