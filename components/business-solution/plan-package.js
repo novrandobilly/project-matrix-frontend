@@ -143,6 +143,134 @@ export default function PlanPackage() {
             <strong> Choose This Plan</strong>
           </button>
         </div>
+        <div className={styles['plan-card']}>
+          <div className={styles['plan-header']}>
+            <h3>Regular</h3>
+            <p>
+              <strong>DISC 50%</strong>
+            </p>
+          </div>
+          <p className={styles['price']}>
+            <strong>
+              Rp 500k<span>/month</span>
+            </strong>
+          </p>
+          <p className={styles['plan-description']}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
+            voluptatem voluptates impedit dicta vel! Suscipit.
+          </p>
+          <ul className={styles['package-features']}>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+          </ul>
+          <button className={styles['choice-button']}>
+            <strong> Choose This Plan</strong>
+          </button>
+        </div>
+
+        <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
+          <div className={styles['plan-header']}>
+            <h3>Premium</h3>
+            <p>
+              <strong>DISC 50%</strong>
+            </p>
+          </div>
+          <p className={styles['price']}>
+            <strong>
+              Rp 500k<span>/month</span>
+            </strong>
+          </p>
+          <p className={styles['plan-description']}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
+            voluptatem voluptates impedit dicta vel! Suscipit.
+          </p>
+          <ul className={styles['package-features']}>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+          </ul>
+          <button className={styles['choice-button']}>
+            <strong> Choose This Plan</strong>
+          </button>
+        </div>
+
+        <div className={styles['plan-card']}>
+          <div className={styles['plan-header']}>
+            <h3>Boost</h3>
+            <p>
+              <strong>DISC 50%</strong>
+            </p>
+          </div>
+          <p className={styles['price']}>
+            <strong>
+              Rp 500k<span>/month</span>
+            </strong>
+          </p>
+          <p className={styles['plan-description']}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
+            voluptatem voluptates impedit dicta vel! Suscipit.
+          </p>
+          <ul className={styles['package-features']}>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+            <li>
+              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
+              &nbsp; <strong>Package&nbsp;</strong>Feature
+            </li>
+          </ul>
+          <button className={styles['choice-button']}>
+            <strong> Choose This Plan</strong>
+          </button>
+        </div>
       </div>
     </div>
   );

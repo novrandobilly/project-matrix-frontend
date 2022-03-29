@@ -28,22 +28,6 @@ export default function Header() {
     setShowSidedrawer(false);
   };
 
-  // useEffect(() => {
-  //   if (!supportDropdown && !productDropdown) return;
-
-  //   function handleClick(event) {
-  //     if (supportDDref.current && !supportDDref.current.contains(event.target)) {
-  //       setSupportDropdown(false);
-  //     }
-  //     if (productDDref.current && !productDDref.current.contains(event.target)) {
-  //       setProductDropdown(false);
-  //     }
-  //   }
-  //   window.addEventListener('click', handleClick);
-
-  //   return () => window.removeEventListener('click', handleClick);
-  // }, [supportDropdown, productDropdown]);
-
   let isBusinessSolution = false;
   if (pathname === '/corporate') {
     isBusinessSolution = true;
@@ -92,11 +76,6 @@ export default function Header() {
           </div>
         </Link>
         <ul className={styles['navigation-list']}>
-          {/* <li>
-            <NavLink exact href='/product'>
-              Product
-            </NavLink>
-          </li> */}
           <li
             className={styles['product']}
             onMouseEnter={() => setProductDropdown(true)}
@@ -250,29 +229,9 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
-              {/* <li className={styles['side-corporate-container']}>
-                <Link href='/corporate' passHref>
-                  <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
-                    <Image alt='Building' src={Building} width={15} height={15} />
-                    <p>
-                      <strong>Corporate</strong>
-                    </p>
-                  </div>
-                </Link>
-              </li> */}
             </ul>
           </Sidedrawer>
         </div>
-        {/* <div className={styles['corporate-container']}>
-          <Link href='/corporate' passHref>
-            <div className={isBusinessSolution ? styles['business-button-red'] : styles['business-button']}>
-              <Image alt='Building' src={Building} width={15} height={15} />
-              <p>
-                <strong>Corporate</strong>
-              </p>
-            </div>
-          </Link>
-        </div> */}
       </div>
     </div>
   );

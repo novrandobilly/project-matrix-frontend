@@ -35,3 +35,24 @@ a {
   opacity: 0;
   transition: all 400ms;
 }
+
+.slide-in-top-enter {
+  transform: translateX(-50%) translateY(-250%) !important;
+}
+
+.slide-in-top-enter-active {
+  transform: translateX(-50%) translateY(-50%) !important;
+  opacity: 1;
+  transition: all 400ms;
+}
+
+.slide-in-top-exit {
+  transform: translateX(-50%) translateY(-50%) !important;
+  opacity: 1;
+}
+
+.slide-in-top-exit-active {
+  transform: translateX(-50%) translateY(-250%) !important;
+  opacity: 0.5;
+  transition: all 400ms;
+}

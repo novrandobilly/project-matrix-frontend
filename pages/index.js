@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Banner from '../components/utils/banner';
@@ -10,8 +11,11 @@ import MCS from '../assets/home-banner/MCS.png';
 import Ramadhan from '../assets/home-banner/Ramadhan.png';
 import LearnMore from '../components/homepage/learn-more';
 import SatisfiedCustomer from '../components/homepage/satisfied-customer';
+import Popup from '../components/homepage/popup';
+import { Backdrop } from '../components/navigation/sidedrawer';
 
 export default function Home({ FAQs }) {
+  const [showPopup, setShowPopup] = useState(true);
   return (
     <div>
       <Head>
@@ -38,6 +42,8 @@ export default function Home({ FAQs }) {
           <button>Daftar Sekarang!</button>
         </a>
       </div>
+      {showPopup && <Backdrop onCancel={() => setShowPopup(false)} />}
+      <Popup show={showPopup} onCancel={() => setShowPopup(false)} />
     </div>
   );
 }

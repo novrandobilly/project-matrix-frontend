@@ -33,7 +33,9 @@ export default function Product({ allActiveProducts, paginateActiveProducts, FAQ
       </section>
       <PlanPackage products={products} />
       <AddOns />
-      <TermConditions />
+      <section className={styles['TOC-container']}>
+        <TermConditions />
+      </section>
       {/* <section className={styles['faq-container']}>
         <FAQ />
         <div className={styles['faq-contact-us']}>

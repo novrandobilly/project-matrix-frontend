@@ -32,7 +32,6 @@ const responsive = {
 };
 
 export default function Career({ products }) {
-  console.log(products);
   return (
     <div className={styles['container']}>
       <Head>

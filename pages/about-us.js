@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import AboutUsBanner from '../assets/about-us-banner.png';
-import Award from '../assets/icons/award.svg';
-import PaperPlane from '../assets/icons/paper-plane.svg';
-import Shield from '../assets/icons/shield.svg';
-import People from '../assets/icons/people.svg';
+import Empowering from '../assets/company-values/empowering.png';
+import Excellence from '../assets/company-values/excellence.png';
+import Heartfelt from '../assets/company-values/heartfelt.png';
+import OneSpirit from '../assets/company-values/one-spirit.png';
+import Responsive from '../assets/company-values/responsive.png';
+import Synergy from '../assets/company-values/synergy.png';
 import Banner from '../components/utils/banner';
 
 import styles from './about-us.module.scss';
@@ -27,11 +29,12 @@ export default function AboutUS() {
       />
       <section className={styles['company-profile']}>
         <div className={styles['vision-mission']}>
-          <h1>Our Vision And Mission</h1>
+          <h1>Vision</h1>
+          <p>&ldquo;To Be the Best & Prominent ICT Company In Delivering Solutions For The Customers&rdquo;</p>
+          <h1>Mission</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure esse molestias, aliquid aliquam nisi ab,
-            laudantium dignissimos obcaecati ipsum, mollitia doloribus. Pariatur, eveniet est. Rerum, molestiae! Esse
-            numquam ducimus labore.
+            &ldquo;Become Our Customer’s Partner to Achieve Success By Providing The Best ICT Services with Quality,
+            Reliability, and Speed&rdquo;
           </p>
         </div>
       </section>
@@ -40,38 +43,56 @@ export default function AboutUS() {
         <div className={styles['about-company']}>
           <h1>Our Company</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, at repudiandae! Officia laudantium
-            voluptate id, corrupti ipsum esse molestiae quidem nemo ab mollitia distinctio amet magnam error at ratione
-            sunt?
+            As a pioneer in its field, NAP Info was the first neutral and independent network access provider to operate
+            in Indonesia through our own sub-sea cable infrastructure, Matrix Cable System (MCS), which directly
+            connecting Jakarta-Singapore. Alongside MCS, we also have a vast range of digital solutions such as Matrix
+            Cable Internet eXchange (MC-IX) Matrix Data Center, Matrix Cloud and Matrix Internet. We contributes to the
+            development of the Indonesian ICT world by providing the best choice of solutions for businesses and
+            residentials.
           </p>
         </div>
       </section>
       <section className={styles['company-features']}>
-        <div className={styles['company-values']}>
-          <div className={styles['align-left-div']}>
-            <div className={styles['feature-row']}>
-              <div className={styles['feature-item']}>
-                <Image alt='Award' src={Award} width={80} height={80} />
-                <h1>Lorem Ipsum</h1>
-              </div>
-              <div className={styles['feature-item']}>
-                <Image alt='Paper Plane' src={PaperPlane} width={80} height={80} />
-                <h1>Lorem Ipsum</h1>
-              </div>
-            </div>
-            <div className={styles['feature-row']}>
-              <div className={styles['feature-item']}>
-                <Image alt='Shield' src={Shield} width={80} height={80} />
-                <h1>Lorem Ipsum</h1>
-              </div>
-              <div className={styles['feature-item']}>
-                <Image alt='People' src={People} width={80} height={80} />
-                <h1>Lorem Ipsum</h1>
-              </div>
-            </div>
+        <p className={styles['sub-title']}>Company Values</p>
+        <h1 className={styles['title-tag']}>#MATRIXHEROES</h1>
+        <div className={styles['feature-item-container']}>
+          <div className={styles['feature-item']}>
+            <Image src={Heartfelt} alt='Heartfelt' width={75} height={55} layout='fixed' />
+            <p>
+              <strong>H</strong>eartfelt
+            </p>
+          </div>
+          <div className={styles['feature-item']}>
+            <Image src={Excellence} alt='Excellence' width={75} height={55} layout='fixed' />
+            <p>
+              <strong>E</strong>xcellence
+            </p>
+          </div>
+          <div className={styles['feature-item']}>
+            <Image src={Responsive} alt='Responsive' width={75} height={55} layout='fixed' />
+            <p>
+              <strong>R</strong>esponsive
+            </p>
+          </div>
+          <div className={styles['feature-item']}>
+            <Image src={OneSpirit} alt='One Spirit' width={75} height={55} layout='fixed' />
+            <p>
+              <strong>O</strong>ne-Spirit
+            </p>
+          </div>
+          <div className={styles['feature-item']}>
+            <Image src={Empowering} alt='Empowering' width={75} height={55} layout='fixed' />
+            <p>
+              <strong>E</strong>mpowering
+            </p>
+          </div>
+          <div className={styles['feature-item']}>
+            <Image src={Synergy} alt='Synergy' width={75} height={55} layout='fixed' />
+            <p>
+              <strong>S</strong>ynergy
+            </p>
           </div>
         </div>
-        <div className={styles['blank-space']}></div>
       </section>
     </div>
   );
