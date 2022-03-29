@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import CheckBlue from '../../assets/icons/check-blue.svg';
+import Link from 'next/link';
 import styles from './plan-package.module.scss';
 
 export default function PlanPackage() {
@@ -18,15 +17,8 @@ export default function PlanPackage() {
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
             <h3>IPLC (International Private Leased Circuit )</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             Choosing the right solution for a company&apos;s telecommunication Requirements is not an easy decision to
             make, since it could pretty much determine its success. In business nowadays, it&apos;s about getting the
@@ -40,45 +32,19 @@ export default function PlanPackage() {
             preferred upstreams through our privately owned integrated network architecture of undersea and terrestrial
             cables and extensive local backhauling in Jakarta, Batam and Singapore.
           </p>
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+
+          <Link href='/highlights/iplc-international-private-leased-circuit' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
 
         <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
             <h3>IP Transit</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             The telecommunications landscape has gone through drastic changes in recent years. Simply getting onto the
             internet is not enough; having a reliable and high-speed connection has become a fundamental need,
@@ -91,45 +57,19 @@ export default function PlanPackage() {
             traffic, which enables them to enjoy cost and performance benefit by distributing IP traffic regionally and
             directly to overseas partners and end users.
           </p>
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+
+          <Link href='/highlights/ip-transit' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
 
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
             <h3>MC-IX (Matrix Cable Internet eXchange)</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             Never in history has the world seen such a massive demand to connect globally as there is today. The
             Internet becomes a means to carry out various activities, while poor quality connectivity becomes the new
@@ -143,90 +83,35 @@ export default function PlanPackage() {
             ASPs to directly exchange their internet traffic with us, to provide faster and better-quality internet
             every time.
           </p>
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <Link href='/highlights/mc-ix-matrix-cable-internet-exchange' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
             <h3>Matrix Data Center</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             Matrix Data Centre sites provide world-class, secure and robust facilities with high-bandwidth internet
             access for corporate customers, ISPs and ASPs. By co-locating servers directly with our Data Center,
             customers can avoid the high cost of leased lines and local access charges and benefit from our large
             bandwidth capacity that will considerably improve website access speed.
           </p>
-
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} layout='fixed' />
-              &nbsp; <p>Two-factors security authorization for a complete safety system ensure your protection</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>Dual-Cooling system to avoid overheat guaranteed to run your data properly</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp;{' '}
-              <p>
-                Advanced fire detection and suppression system with redundant power supply (2N electrical equipment) for
-                emergency backup
-              </p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>24-Hr CCTV security monitoring</p>
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <Link href='/highlights/matrix-data-center' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
 
         <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
             <h3>Matrix Line (Local Loop)</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             A layer 2 transport that connects from any demarcation point of the customer premises to the edge of the
             common carrier or telecommunications service provider&apos;s network. Matrix NAP Info&apos;s Local Loop
@@ -236,91 +121,33 @@ export default function PlanPackage() {
             With presence in more than 22 Data Center locations at Greater Jakarta Area, makes us the most connected
             DC-2-DC Solution for your business.
           </p>
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <Link href='/highlights/matrix-data-center' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
 
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
             <h3>Matrix Internet</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             Providing high performance dedicated internet through our reliable connectivity to global network, supported
             with our excellent customer service and monitoring team. Tailored to your needs without hassle.
           </p>
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>Symmetrical Upload &amp; Download</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>Unlimited Connection – NO FUP</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>100% Fiber Optic Technology</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>24-Hour Customer Care support</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>1 Public Static IP</p>
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <p>Free WiFi Router</p>
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <Link href='/highlights/matrix-internet' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
             <h3>Matrix Cloud</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
           </div>
-          <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
-          </p>
+
           <p className={styles['plan-description']}>
             Increasing demand of software solution for enterprise disrupts the conventional model of IT infrastructure
             deployed by existing solution providers. This conventional structure creates obstacles for development and
@@ -341,31 +168,11 @@ export default function PlanPackage() {
             infrastructure solution for management of virtualized data centers, service management, hybrid cloud
             computing, and on-demand provisioning.
           </p>
-          <ul className={styles['package-features']}>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-            <li>
-              <Image alt='Check Blue' src={CheckBlue} width={20} height={20} />
-              &nbsp; <strong>Package&nbsp;</strong>Feature
-            </li>
-          </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <Link href='/highlights/matrix-cloud' passHref>
+            <button className={styles['choice-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

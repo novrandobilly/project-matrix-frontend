@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import SpeedTest from '../../assets/speed-test.png';
 import GameDay from '../../assets/game-day.png';
 import styles from './learn-more.module.scss';
@@ -18,9 +19,11 @@ export default function LearnMore() {
             Service Provider, Matrix NAP Info has set to commit delivering solutions for businesses and engineering the
             future.
           </p>
-          <button className={styles['learn-more-button']}>
-            <strong>Learn More</strong>
-          </button>
+          <Link href='/about-us' passHref>
+            <button className={styles['learn-more-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
         <div className={styles['image-container']}>
           <Image alt='Speed Test' src={SpeedTest} width={600} height={450} />
@@ -34,9 +37,11 @@ export default function LearnMore() {
             the world through global content without barriers and without limits. A quality internet network, at ease,
             and the only protected broadband with compensation guarantee in Indonesia
           </p>
-          <button className={styles['learn-more-button']}>
-            <strong>Learn More</strong>
-          </button>
+          <Link href='/about-us' passHref>
+            <button className={styles['learn-more-button']}>
+              <strong>Learn More</strong>
+            </button>
+          </Link>
         </div>
         <div className={styles['image-container']}>
           <Image alt='Game Day' src={GameDay} width={700} height={525} />

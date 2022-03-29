@@ -110,54 +110,93 @@ export default function Career({ products }) {
 
       <div className={styles['vacancy-container']}>
         <h2>JOB VACANCY</h2>
-        <div className={styles['search-input']}>
+        {/* <div className={styles['search-input']}>
           <input type='text' placeholder='Search...' />
           <div className={styles['image-container']}>
             <Image alt='Search' src={Search} width={25} height={25} />
           </div>
-        </div>
+        </div> */}
         <p className={styles['send-cv']}>
           Send your CV to <strong>career@nap.net.id</strong>
         </p>
         <div className={styles['job-listing']}>
           <div className={styles['job-item']}>
-            <h2>JOB POSITION</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium
-              dolores rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque
-              sequi quisquam consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta
-              consequuntur sit quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse,
-              nulla sit! Blanditiis animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam
-              eum? Harum quam est in voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur
-              aliquid harum architecto illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi
-              tenetur provident quo est?
-            </p>
+            <h2>Accounting &amp; Tax Associate</h2>
+            <ul>
+              <li>Minimum diploma or bachelor’s degree in Accounting/Finance/Tax.</li>
+              <li>At least having 2 years of working experience in similar field.</li>
+              <li>Having an excellent knowledge in general accounting practice.</li>
+              <li>Having a certificate of Brevet A &amp; B is preferred.</li>
+              <li>Familiar with e-Faktur Pajak, e-SPT, and general tax regulations.</li>
+              <li>Have the ability in data analysis, reports, and financial projections.</li>
+              <li>Have the ability to use MS. Office.</li>
+              <li>Having a good communication and interpersonal skills.</li>
+            </ul>
           </div>
           <div className={styles['job-item']}>
-            <h2>JOB POSITION</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium
-              dolores rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque
-              sequi quisquam consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta
-              consequuntur sit quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse,
-              nulla sit! Blanditiis animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam
-              eum? Harum quam est in voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur
-              aliquid harum architecto illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi
-              tenetur provident quo est?
-            </p>
+            <h2>Finance Associate</h2>
+            <ul>
+              <li> Minimum diploma or bachelor’s degree in Accounting.</li>
+              <li> At least having 2 years of working experience in Account Payable/Finance.</li>
+              <li> Have a good communication and administrative skills.</li>
+              <li> Comprehend basic accounting processes.</li>
+              <li> Comprehend financial transaction reports.</li>
+              <li> Have the ability to use MS. Office.</li>
+              <li> Have the ability to manage SAP system is a plus.</li>
+            </ul>
           </div>
           <div className={styles['job-item']}>
-            <h2>JOB POSITION</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsum ipsa suscipit accusantium
-              dolores rerum, accusamus porro veniam numquam commodi provident, incidunt eveniet officiis doloremque
-              sequi quisquam consequatur hic iure? Illo dolorum, iste, eaque fugiat saepe minima repellendus sint dicta
-              consequuntur sit quidem esse sapiente officiis officia nostrum porro! Alias, assumenda maiores. Esse,
-              nulla sit! Blanditiis animi cumque aliquam quam, ullam iure enim possimus quia fuga doloremque aperiam
-              eum? Harum quam est in voluptate. Eius eos quasi inventore, praesentium sapiente, dignissimos, consequatur
-              aliquid harum architecto illum eaque consectetur similique excepturi hic libero rerum asperiores iste modi
-              tenetur provident quo est?
-            </p>
+            <h2>Account Manager</h2>
+            <ul>
+              <li>Male / Female max 35 years old.</li>
+              <li>Diploma or bachelor&lsquo;s degree from any background.</li>
+              <li>Min. 3 years working experience as Account Manager in Telecommunication or IT Industries.</li>
+              <li>Good Communication &amp; Interpersonal skills.</li>
+              <li>Proficiency in English skill.</li>
+              <li>Strong presentation and negotiation skills.</li>
+              <li>Confidence, tact and a persuasive manner.</li>
+              <li>Good organisational and time management skills.</li>
+            </ul>
+          </div>
+          <div className={styles['job-item']}>
+            <h2>System Developer</h2>
+            <ul>
+              <li>Minimum bachelor&lsquo;s degree majoring Computer Science/Information Technology or equivalent.</li>
+              <li>At least having 2 years of working experience in similar field.</li>
+              <li>
+                Having an excellent knowledge and hands-on experience in web programming – PHP with Laravel framework.
+              </li>
+              <li>Having an excellent experience in creating report using SQL.</li>
+              <li>Good in analytic, and systematic skills.</li>
+              <li>A fast learner, a self-starter, highly initiative person.</li>
+              <li>Good command of spoken and written English.</li>
+            </ul>
+          </div>
+          <div className={styles['job-item']}>
+            <h2>Network Engineering</h2>
+            <ul>
+              <li> Diploma or bachelor&lsquo;s degree in Electrical Engineering, </li>
+              <li> Telecommunication or any IT major related.</li>
+              <li> Having a min. 2 years experience in Telecommunication industry or ISP.</li>
+              <li> Having certification such as Juniper or similar.</li>
+              <li> Having ability to configure switches &amp; routers.</li>
+              <li> Strong technical skills &amp; able to do a well-managed troubleshooting.</li>
+              <li> Having a good understanding of basic network and familiar with network application.</li>
+              <li> Having to work in team with minimum supervision.</li>
+              <li> Having a good interpersonal and communication skill</li>
+            </ul>
+          </div>
+          <div className={styles['job-item']}>
+            <h2>Network Monitoring Support</h2>
+            <ul>
+              <li>Diploma or bachelor’s degree from Electrical Engineering, Telecommunication or IT major.</li>
+              <li>Having certification such as CCNA (Cisco Certified Network Associate) is an advantage.</li>
+              <li>Have the ability to configure switches and routers.</li>
+              <li>Having a good technical knowledge related to telecommunications networks.</li>
+              <li>Having a one-year experience in Telecommunication industry is an advantage.</li>
+              <li>Having a good communication and interpersonal skills.</li>
+              <li>Having a good organizational and time management skills.</li>
+            </ul>
           </div>
         </div>
       </div>
