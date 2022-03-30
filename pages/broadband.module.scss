@@ -155,6 +155,16 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 700px) {
+  .registration-fixed-box {
+    button {
+      font-size: 0.8rem;
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .faq-container {
     .faq-contact-us {
