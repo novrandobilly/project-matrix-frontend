@@ -174,6 +174,30 @@ export default function Header() {
                 </NavLink>
               </li>
               <li>
+                <Link href='/corporate'>Corporate</Link>
+              </li>
+              <li>
+                <Link href='/highlights/iplc-international-private-leased-circuit'>&gt; IPLC</Link>
+              </li>
+              <li>
+                <Link href='/highlights/ip-transit'>&gt; IP Transit</Link>
+              </li>
+              <li>
+                <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>&gt; MC-IX</Link>
+              </li>
+              <li>
+                <Link href='/highlights/matrix-data-center'>&gt; Matrix Data Center</Link>
+              </li>
+              <li>
+                <Link href='/highlights/matrix-line-local-loop'>&gt; Matrix Line</Link>
+              </li>
+              <li>
+                <Link href='/highlights/matrix-internet'>&gt; Matrix Internet</Link>
+              </li>
+              <li>
+                <Link href='/highlights/matrix-cloud'>&gt; Matrix Cloud</Link>
+              </li>
+              <li>
                 <NavLink href='/about-us'>Company</NavLink>
               </li>
               <li>
