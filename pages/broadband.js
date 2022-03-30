@@ -52,7 +52,7 @@ export default function Broadband({ allActiveProducts, paginateActiveProducts, F
           INSTALLATION FEE &amp; WIFI ROUTER!
         </p>
         <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
-          <button>Daftar Sekarang!</button>
+          <button>Check Out The Plan</button>
         </a>
       </div>
       <a href='https://wa.me/6281119078787' target='_blank' rel='noreferrer' className={styles['whatsapp-icon']}>
