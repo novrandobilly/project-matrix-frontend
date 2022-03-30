@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #151a48;
   color: #fff;
+  padding-bottom: 10px;
 }
 .back-link {
   width: 100%;
@@ -15,7 +16,23 @@
   background-color: #151a48;
   margin: 0 auto;
   padding: 0 100px;
+  article {
+    margin-bottom: 40px;
+  }
 }
+.article-container-title {
+  width: 100%;
+  text-align: center;
+}
+
+.article-title {
+  margin: 0;
+}
+.article-date {
+  margin: 0;
+  font-style: italic;
+}
+
 .article-image-main {
   width: 100%;
   display: flex;
