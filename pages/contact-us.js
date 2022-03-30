@@ -59,21 +59,23 @@ export default function ContactUs() {
             <div className={styles['icon']}>
               <Image alt='Phone' src={Phone} width={25} height={25} />
             </div>
-            <p>1-500-XXX</p>
+            <p>1-500-787 (24-Hour Customer Care) / +6221 3970 1787 (Business Hour)</p>
           </div>
           <div className={styles['address']}>
             <div className={styles['icon']}>
               <Image alt='Address' src={Location} width={25} height={25} />
             </div>
             <p>
-              Menara Kadin Indonesia, 7<sub>th</sub> floor, JL. HR. Rasuna Said, Blok X-5 Kav 2-3, Jakarta 12950
+              Menara Kadin Indonesia 7<sup>th</sup> Floor Jl. H. R. Rasuna Said X5 Kav. 2-3, South Jakarta, 12950
             </p>
           </div>
           <div className={styles['email']}>
             <div className={styles['icon']}>
               <Image alt='Email' src={Mail} width={25} height={25} />
             </div>
-            <p>sales.broadband@napinfo.co.id</p>
+            <a href='mailto:info@napinfo.co.id' target='_blank' rel='noreferrer'>
+              info@napinfo.co.id
+            </a>
           </div>
         </div>
       </div>

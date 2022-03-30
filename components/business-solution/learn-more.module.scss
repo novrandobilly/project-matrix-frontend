@@ -21,8 +21,9 @@
     flex-direction: column;
     justify-content: center;
     max-width: 600px;
-    padding-top: 100px;
+    padding-top: 0;
     padding-left: 100px;
+    position: relative;
 
     p {
       margin-bottom: 50px;
@@ -59,6 +60,40 @@
     text-align: end;
   }
 }
+.solution-options-container {
+  position: absolute;
+  bottom: -250px;
+  width: 100%;
+  max-width: 250px;
+  padding: 5px 0 0;
+  background-color: transparent;
+}
+.solution-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #4d5eff;
+  color: #fff;
+  border-radius: 10px;
+  a {
+    width: 100%;
+  }
+  & > * {
+    padding: 7px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #fff;
+      color: #4d5eff;
+      width: 100%;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .container {
     padding: 0 40px 100px;

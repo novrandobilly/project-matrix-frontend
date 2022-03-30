@@ -210,50 +210,38 @@
   .product-dropdown {
     position: absolute;
     list-style: none;
-    width: 450px;
-    font-weight: 700;
+    min-width: 250px;
     z-index: 10;
-    padding: 0;
+    padding: 20px;
     background-color: transparent;
     color: #151a48;
     transition: all 0.2s ease-in-out;
     padding: 15px 0 0;
     display: flex;
-    .product-dropdown-container {
+    flex-direction: column;
+    border-radius: 10px;
+    ul {
+      padding: 10px;
       background-color: #fff;
-      width: 100%;
-      padding: 20px;
-      &:nth-child(1) {
-        border-radius: 10px 0 0 10px;
-      }
-      &:nth-child(2) {
-        border-radius: 0 10px 10px 0;
-      }
-      .broadband-corporate-title {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        font-weight: 700;
-        min-width: 200px;
-        padding: 10px;
-      }
+      border-radius: 10px;
     }
-    .sub-dropdown {
-      list-style: none;
-      padding: 0;
-      font-weight: 400;
-    }
+
     li {
       width: 100%;
       display: flex;
       align-items: center;
       flex-direction: column;
+      padding-left: 20px;
+      &:nth-child(1),
+      &:nth-child(2) {
+        font-weight: 700;
+        padding: 0;
+      }
     }
     a {
       border-radius: 0;
       width: 100%;
-      min-width: 200px;
-      padding: 10px 20px;
+      padding: 10px;
       transition: all 0.2s ease-in-out;
       background-color: #fff;
       &:hover {
@@ -264,10 +252,13 @@
   }
 }
 .hide {
-  transform: translateY(-50%);
+  transform: translateY(-150%);
   opacity: 0;
   z-index: 0;
   pointer-events: none;
+  & > * {
+    pointer-events: none;
+  }
 }
 
 .active {

@@ -18,10 +18,8 @@ export default function footer() {
             <Link href='/broadband' passHref>
               <h3>Broadband</h3>
             </Link>
-          </div>
-          <div className={styles['link-list']}>
             <Link href='/corporate' passHref>
-              <h3>Corporate</h3>
+              <h3>Corporate &amp; Network Solutions</h3>
             </Link>
             <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
             <Link href='/highlights/ip-transit'>IP Transit</Link>

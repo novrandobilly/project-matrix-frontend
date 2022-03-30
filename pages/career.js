@@ -4,6 +4,7 @@ import JoinUsBanner from '../assets/join-us-banner.png';
 import Image from 'next/image';
 import TomHolland from '../assets/tom-holland.jpg';
 import Chatting from '../assets/chatting.png';
+import Hiring from '../assets/we-are-hiring.png';
 import Search from '../assets/icons/search.svg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -40,8 +41,8 @@ export default function Career({ products }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Banner bannerSource={[JoinUsBanner]} alt='Join Us Banner' bannerNav={false} />
-      <div className={styles['multi-carousel-container']}>
+      <Banner bannerSource={[Hiring]} alt='Hiring Banner' bannerWidth={1536} bannerNav={false} />
+      {/* <div className={styles['multi-carousel-container']}>
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -106,7 +107,7 @@ export default function Career({ products }) {
 
           <ButtonNext>&gt;</ButtonNext>
         </CarouselProvider>
-      </div>
+      </div> */}
 
       <div className={styles['vacancy-container']}>
         <h2>JOB VACANCY</h2>

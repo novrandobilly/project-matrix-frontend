@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Banner from '../components/utils/banner';
-// import PlanPackage from '../components/product/plan-package';
+import Link from 'next/link';
 import EngineeringFuture from '../components/homepage/engineering-future';
 import Anniversary from '../assets/home-banner/Anniversary.png';
 import InternetMati from '../assets/home-banner/Internet_Mati_Uang_Kembali.png';
@@ -23,24 +23,26 @@ export default function Home({ FAQs }) {
         <meta name='description' content='Matrix Homepage' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Banner bannerSource={[Anniversary, InternetMati, MCIX, MCS, Ramadhan]} />
+      <Banner bannerWidth={1536} bannerSource={[Anniversary, InternetMati, MCIX, MCS, Ramadhan]} />
       <EngineeringFuture />
       {/* <PlanPackage /> */}
       <section className={styles['learn-more-container']}>
         <LearnMore />
       </section>
-      <section className={styles['satisfied-customer-container']}>
+      {/* <section className={styles['satisfied-customer-container']}>
         <SatisfiedCustomer />
-      </section>
+      </section> */}
 
       <div className={styles['registration-fixed-box']}>
-        <p>
-          The First Protected Broadband Solution In Indonesia! Money Back Guarantee If Connection Problems Occur. FREE
-          INSTALLATION FEE &amp; WIFI ROUTER!
-        </p>
-        <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
-          <button>Daftar Sekarang!</button>
-        </a>
+        <div className={styles['registration-text']}>
+          <p>The First Protected Broadband Solution In Indonesia! Money Back Guarantee If Connection Problems Occur.</p>{' '}
+          <p>
+            <strong>FREE INSTALLATION FEE &amp; WIFI ROUTER!</strong>
+          </p>
+        </div>
+        <Link href='/broadband' passHref>
+          <button>Check Out The Plan</button>
+        </Link>
       </div>
       {showPopup && <Backdrop onCancel={() => setShowPopup(false)} />}
       <Popup show={showPopup} onCancel={() => setShowPopup(false)} />

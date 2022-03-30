@@ -1,5 +1,9 @@
 import Head from 'next/head';
-import Testimony from '../components/business-solution/testimony';
+import Image from 'next/image';
+import Mail from '../assets/icons/mail.svg';
+import MatrixCable from '../assets/matrix-cable-system.PNG';
+
+// import Testimony from '../components/business-solution/testimony';
 import LearnMore from '../components/business-solution/learn-more';
 import BannerBS from '../components/business-solution/bannerBS';
 import PlanPackage from '../components/business-solution/plan-package';
@@ -17,7 +21,7 @@ export default function BusinessSolution() {
       </Head>
 
       <BannerBS alt='Business Solution' />
-      <Testimony />
+      {/* <Testimony /> */}
       <div className={styles['learn-more-container']}>
         <LearnMore />
       </div>
@@ -25,6 +29,15 @@ export default function BusinessSolution() {
       <div className={styles['contact-us-container']}>
         <ContactUs />
       </div>
+      <div className={styles['matrix-cable-system']}>
+        <Image src={MatrixCable} width={1536} height={800} alt='Matrix Cable System' />
+      </div>
+      <a href='mailto:sales@napinfo.co.id' target='_blank' rel='noreferrer' className={styles['mail-icon']}>
+        <div className={styles['mail-container']}>
+          <Image alt='Email' src={Mail} width={30} height={30} layout='fixed' />
+        </div>
+        <span className={styles['contact-text']}>Connect With Us!</span>
+      </a>
     </div>
   );
 }
