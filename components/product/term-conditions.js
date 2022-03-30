@@ -9,14 +9,14 @@ import Feature5 from '../../assets/matrix-features/5.png';
 export default function TermConditions() {
   return (
     <div className={styles['term-conditions-container']}>
-      {/* <div className={styles['features']}>
+      <div className={styles['features']}>
         <Image src={Feature1} alt='100% Fiber Optic' width={150} height={150} />
         <Image src={Feature2} alt='Unlimited No FUP' width={150} height={150} />
         <Image src={Feature3} alt='Uang kembali saat gangguan*' width={150} height={150} />
         <Image src={Feature4} alt='Powered by MC-IX' width={150} height={150} />
         <Image src={Feature5} alt='IPv6 Ready' width={150} height={150} />
         <div className={styles['red-line-background']} />
-      </div> */}
+      </div>
 
       <div className={styles['term-conditions']}>
         <h2 className={styles['title']}>Terms &amp; Conditions</h2>
