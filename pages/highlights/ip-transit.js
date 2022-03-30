@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Banner from '../../components/utils/banner';
+import IPTransit from '../../assets/corporate-product-images/IPTransit.jpg';
 
 import styles from './articleid.module.scss';
 
@@ -12,6 +14,14 @@ export default function IpTransit() {
         <meta name='description' content='IP Transit' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'IP Transit Banner'}
+        bannerSource={[IPTransit]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>

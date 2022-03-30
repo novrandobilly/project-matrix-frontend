@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import MCIXGlobalMap from '../../assets/mcix-global-map.png';
+import Banner from '../../components/utils/banner';
+import MCIXBanner from '../../assets/corporate-product-images/MCIX.jpg';
 
 import styles from './articleid.module.scss';
 
@@ -14,6 +16,14 @@ export default function MCIX() {
         <meta name='description' content='MC-IX (Matrix Cable Internet eXchange)' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'IP Transit Banner'}
+        bannerSource={[MCIXBanner]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>

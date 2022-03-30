@@ -34,7 +34,7 @@ export default function AboutUS() {
       <section className={styles['company-profile']}>
         <div className={styles['vision-mission']}>
           <h1>Vision</h1>
-          <p>&ldquo;To Be the Best & Prominent ICT Company In Delivering Solutions For The Customers&rdquo;</p>
+          <p>&ldquo;To Be the Best &amp; Prominent ICT Company In Delivering Solutions For The Customers&rdquo;</p>
           <h1>Mission</h1>
           <p>
             &ldquo;Become Our Customer’s Partner to Achieve Success By Providing The Best ICT Services with Quality,

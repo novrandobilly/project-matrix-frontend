@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import Banner from '../../components/utils/banner';
+import DataCenterBanner from '../../assets/corporate-product-images/DataCenter.jpg';
 import styles from './articleid.module.scss';
 
 export default function MatrixDataCenter() {
@@ -12,6 +13,14 @@ export default function MatrixDataCenter() {
         <meta name='description' content='Matrix Data Center' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'Matrix Data Center Banner'}
+        bannerSource={[DataCenterBanner]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>

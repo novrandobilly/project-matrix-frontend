@@ -9,10 +9,7 @@ export default function PlanPackage() {
         <h1>Our Corporate &amp;&nbsp;</h1>
         <h1>Network Solutions</h1>
       </div>
-      <p className={styles['sub-title']}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in, dolorum eaque fugit eos magnam! Adipisci
-        enim voluptas earum! Explicabo voluptatem eligendi cum officia.
-      </p>
+
       <div className={styles['plan-option']}>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>

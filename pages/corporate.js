@@ -29,7 +29,7 @@ export default function BusinessSolution() {
       <div className={styles['learn-more-container']}>
         <LearnMore />
       </div>
-      <PlanPackage />
+      {/* <PlanPackage /> */}
       <div className={styles['contact-us-container']}>
         <ContactUs />
       </div>
