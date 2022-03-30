@@ -1,18 +1,26 @@
 import React from 'react';
 import Image from 'next/image';
 import CheckRed from '../../assets/icons/check-red.svg';
+import PertamaDiIndonesia from '../../assets/pertama-di-indonesia.png';
 import styles from './plan-package.module.scss';
 
 export default function PlanPackage({ products }) {
   return (
     <div className={styles['container']}>
-      <div className={styles['title']}>
-        <h1>Matrix&nbsp;</h1>
-        <h1>Broadband</h1>
+      <div className={styles['header']}>
+        <div className={styles['header-image']}>
+          <Image alt='Pertama di Indonesia' src={PertamaDiIndonesia} width={200} height={200} />
+        </div>
+        <div className={styles['header-text']}>
+          <div className={styles['title']}>
+            <h1>Matrix&nbsp;</h1>
+            <h1>Broadband</h1>
+          </div>
+          <p className={styles['sub-title']}>Internet terproteksi pertama di Indonesia!</p>
+          <p className={styles['sub-title']}>Memberikan Kepuasan Maksimal Dalam Aktivitas Digital Anda</p>
+          <p className={styles['sub-title']}>INTERNET MATI? UANG KEMBALI!</p>
+        </div>
       </div>
-      <p className={styles['sub-title']}>Internet terproteksi pertama di Indonesia!</p>
-      <p className={styles['sub-title']}>Memberikan Kepuasan Maksimal Dalam Aktivitas Digital Anda</p>
-      <p className={styles['sub-title']}>INTERNET MATI? UANG KEMBALI!</p>
       <div className={styles['plan-option']}>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>

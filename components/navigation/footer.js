@@ -73,9 +73,7 @@ export default function footer() {
         <div className={styles['footer-logo']}>
           <Image alt='Logo' src={Logo} width={150} height={65} />
         </div>
-        <p className={styles['company-description']}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptate optio.
-        </p>
+
         <div className={styles['connect-with-us']}>
           <div className={styles['social-media-container']}>
             <h4>

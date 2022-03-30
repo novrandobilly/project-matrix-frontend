@@ -63,37 +63,37 @@ export default function AboutUS() {
         <h1 className={styles['title-tag']}>#MATRIXHEROES</h1>
         <div className={styles['feature-item-container']}>
           <div className={styles['feature-item']}>
-            <Image src={Heartfelt} alt='Heartfelt' width={120} height={90} layout='fixed' />
+            <Image src={Heartfelt} alt='Heartfelt' width={65} height={50} layout='fixed' />
             <p>
               <strong>H</strong>eartfelt
             </p>
           </div>
           <div className={styles['feature-item']}>
-            <Image src={Excellence} alt='Excellence' width={120} height={90} layout='fixed' />
+            <Image src={Excellence} alt='Excellence' width={65} height={50} layout='fixed' />
             <p>
               <strong>E</strong>xcellence
             </p>
           </div>
           <div className={styles['feature-item']}>
-            <Image src={Responsive} alt='Responsive' width={120} height={90} layout='fixed' />
+            <Image src={Responsive} alt='Responsive' width={65} height={50} layout='fixed' />
             <p>
               <strong>R</strong>esponsive
             </p>
           </div>
           <div className={styles['feature-item']}>
-            <Image src={OneSpirit} alt='One Spirit' width={120} height={90} layout='fixed' />
+            <Image src={OneSpirit} alt='One Spirit' width={65} height={50} layout='fixed' />
             <p>
               <strong>O</strong>ne-Spirit
             </p>
           </div>
           <div className={styles['feature-item']}>
-            <Image src={Empowering} alt='Empowering' width={120} height={90} layout='fixed' />
+            <Image src={Empowering} alt='Empowering' width={65} height={50} layout='fixed' />
             <p>
               <strong>E</strong>mpowering
             </p>
           </div>
           <div className={styles['feature-item']}>
-            <Image src={Synergy} alt='Synergy' width={120} height={90} layout='fixed' />
+            <Image src={Synergy} alt='Synergy' width={65} height={50} layout='fixed' />
             <p>
               <strong>S</strong>ynergy
             </p>
