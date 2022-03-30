@@ -87,7 +87,9 @@ export default function Header() {
               </li>
               <li className={styles['product-dropdown-container']}>
                 <div className={styles['broadband-corporate-title']}>
-                  <span>Corporate</span>
+                  <Link href='/corporate' passHref>
+                    <span>Corporate</span>
+                  </Link>
                 </div>
                 <ul className={styles['sub-dropdown']}>
                   <li>
@@ -103,7 +105,7 @@ export default function Header() {
                     <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
                   </li>
                   <li>
-                    <Link href='/corporate'>Matrix Line</Link>
+                    <Link href='/highlights/matrix-line-local-loop'>Matrix Line</Link>
                   </li>
                   <li>
                     <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
