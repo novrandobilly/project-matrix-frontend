@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import Banner from '../../components/utils/banner';
+import InternetBanner from '../../assets/corporate-product-images/Internet.jpg';
 import styles from './articleid.module.scss';
 
 export default function MatrixInternet() {
@@ -12,6 +13,14 @@ export default function MatrixInternet() {
         <meta name='description' content='Matrix Internet' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'Internet Banner'}
+        bannerSource={[InternetBanner]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>

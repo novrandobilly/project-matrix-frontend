@@ -48,10 +48,7 @@ export default function Broadband({ allActiveProducts, paginateActiveProducts, F
       </section> */}
       <div className={styles['registration-fixed-box']}>
         <div className={styles['registration-text']}>
-          <p>
-            The First Protected Broadband Solution In Indonesia! Money Back Guarantee If Connection Problems Occur.{' '}
-          </p>
-          <p>FREE INSTALLATION FEE &amp; WIFI ROUTER!</p>
+          <p>LIMITED OFFER! FREE INSTALLATION FEE &amp; WIFI ROUTER!</p>
         </div>
         <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
           <button>Subscribe Now!</button>

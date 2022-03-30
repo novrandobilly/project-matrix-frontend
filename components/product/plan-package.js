@@ -16,9 +16,9 @@ export default function PlanPackage({ products }) {
             <h1>Matrix&nbsp;</h1>
             <h1>Broadband</h1>
           </div>
-          <p className={styles['sub-title']}>Internet terproteksi pertama di Indonesia!</p>
-          <p className={styles['sub-title']}>Memberikan Kepuasan Maksimal Dalam Aktivitas Digital Anda</p>
-          <p className={styles['sub-title']}>INTERNET MATI? UANG KEMBALI!</p>
+          <p className={styles['sub-title']}>The First Protected Broadband Solution In Indonesia!</p>
+          <p className={styles['sub-title']}>Money Back Guarantee If Connection Problems Occur</p>
+          <p className={styles['sub-title']}>FREE INSTALLATION FEE &amp; WIFI ROUTER!</p>
         </div>
       </div>
       <div className={styles['plan-option']}>
@@ -104,7 +104,7 @@ export default function PlanPackage({ products }) {
             <h3>Up To 300Mbps</h3>
           </div>
           <p className={styles['price']}>
-            <strong>Tanyakan Harga</strong>
+            <strong>Ask For Price</strong>
           </p>
           <ul className={styles['package-features']}>
             <li>
@@ -127,7 +127,7 @@ export default function PlanPackage({ products }) {
             <h3>Up To 500Mbps</h3>
           </div>
           <p className={styles['price']}>
-            <strong>Tanyakan Harga</strong>
+            <strong>Ask For Price</strong>
           </p>
           <ul className={styles['package-features']}>
             <li>
@@ -151,7 +151,7 @@ export default function PlanPackage({ products }) {
             <h3>Up To 1Gbps</h3>
           </div>
           <p className={styles['price']}>
-            <strong>Tanyakan Harga</strong>
+            <strong>Ask For Price</strong>
           </p>
           <ul className={styles['package-features']}>
             <li>

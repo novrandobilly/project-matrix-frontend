@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import DataCenterMap from '../../assets/data-center-map.PNG';
+import Banner from '../../components/utils/banner';
+import LocalLoopBanner from '../../assets/corporate-product-images/LocalLoop.jpg';
 import Link from 'next/link';
 
 import styles from './articleid.module.scss';
@@ -14,6 +16,14 @@ export default function MatrixLine() {
         <meta name='description' content='Matrix Line (Local Loop)' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'Local Loop Banner'}
+        bannerSource={[LocalLoopBanner]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Banner from '../../components/utils/banner';
+import IPLCBanner from '../../assets/corporate-product-images/IPLC.jpg';
 
 import styles from './articleid.module.scss';
 
@@ -12,6 +14,14 @@ export default function IPLC() {
         <meta name='description' content='IPLC (International Private Leased Circuit)' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'IPLC Banner'}
+        bannerSource={[IPLCBanner]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>

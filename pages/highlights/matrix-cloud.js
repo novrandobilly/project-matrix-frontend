@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import Banner from '../../components/utils/banner';
+import MatrixCloudBanner from '../../assets/corporate-product-images/Cloud.jpg';
 import styles from './articleid.module.scss';
 
 export default function MatrixCloud() {
@@ -12,6 +13,14 @@ export default function MatrixCloud() {
         <meta name='description' content='Matrix Cloud' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Banner
+        alt={'Matrix Cloud Banner'}
+        bannerSource={[MatrixCloudBanner]}
+        bannerHeight={525}
+        bannerWidth={1536}
+        bannerNav={false}
+        style={{ paddingBottom: '60px' }}
+      />
       <div className={styles['back-link']}>
         <Link href='/'>&lt; Back to home</Link>
       </div>
