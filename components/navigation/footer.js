@@ -30,7 +30,7 @@ export default function footer() {
             <Link href='/highlights/matrix-cloud'>Matrix Cloud</Link>
           </div>
           <div className={styles['link-list']}>
-            <Link href='/company' passHref>
+            <Link href='/about-us' passHref>
               <h3>Company</h3>
             </Link>
           </div>
