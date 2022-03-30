@@ -8,7 +8,7 @@ export default function Article() {
   return (
     <div className={styles['container']}>
       <div className={styles['back-link']}>
-        <Link href='/'>&lt; Back to highlights</Link>
+        <Link href='/'>&lt; Back to home</Link>
       </div>
       <div className={styles['article-container']}>
         <div className={styles['article-image-main']}>

@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Phone from '../assets/icons/phone2.svg';
 import Location from '../assets/icons/location.svg';
-import Mail from '../assets/icons/mail.svg';
+import Mail from '../assets/icons/mail-black.svg';
 import styles from './contact-us.module.scss';
 
 export default function ContactUs() {

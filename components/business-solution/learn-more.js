@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import SolutionMindset from '../../assets/solution-mindset.png';
+import SolutionMindset from '../../assets/solution-mindset.svg';
 import VoiceControl from '../../assets/voice-control.png';
 import styles from './learn-more.module.scss';
 
@@ -20,7 +20,7 @@ export default function LearnMore() {
             className={styles['learn-more-button']}
             onMouseEnter={() => setShow(true)}
             onMouseLeave={() => setShow(false)}>
-            <strong>Learn More</strong>
+            <strong>See Our Solutions</strong>
           </button>
           <div
             className={`${styles['solution-options-container']} ${!show ? styles['hide'] : ''}`}

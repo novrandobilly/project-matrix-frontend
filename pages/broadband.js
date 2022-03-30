@@ -54,15 +54,15 @@ export default function Broadband({ allActiveProducts, paginateActiveProducts, F
           <p>FREE INSTALLATION FEE &amp; WIFI ROUTER!</p>
         </div>
         <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
-          <button>Check Out The Plan</button>
+          <button>Subscribe Now!</button>
         </a>
       </div>
-      <a href='https://wa.me/6281119078787' target='_blank' rel='noreferrer' className={styles['whatsapp-icon']}>
+      {/* <a href='https://wa.me/6281119078787' target='_blank' rel='noreferrer' className={styles['whatsapp-icon']}>
         <div className={styles['whatsapp-container']}>
           <Image alt='Whatsapp' src={Whatsapp} width={30} height={30} layout='fixed' />
         </div>
         <span className={styles['contact-text']}>Chat With Us!</span>
-      </a>
+      </a> */}
     </div>
   );
 }
