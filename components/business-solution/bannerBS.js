@@ -30,31 +30,16 @@ export default function BannerBS({
       </div>
       {bannerNav && (
         <div className={styles['banner-navigation']}>
-          <div
-            id='1'
-            onClick={onBannerSelectHandler}
-            className={`${styles['banner-nav']} ${activeIndex === 1 ? styles['banner-active'] : ''}`}
-          />
-          <div
-            id='2'
-            onClick={onBannerSelectHandler}
-            className={`${styles['banner-nav']} ${activeIndex === 2 ? styles['banner-active'] : ''}`}
-          />
-          <div
-            id='3'
-            onClick={onBannerSelectHandler}
-            className={`${styles['banner-nav']} ${activeIndex === 3 ? styles['banner-active'] : ''}`}
-          />
-          <div
-            id='4'
-            onClick={onBannerSelectHandler}
-            className={`${styles['banner-nav']} ${activeIndex === 4 ? styles['banner-active'] : ''}`}
-          />
-          <div
-            id='5'
-            onClick={onBannerSelectHandler}
-            className={`${styles['banner-nav']} ${activeIndex === 5 ? styles['banner-active'] : ''}`}
-          />
+          {bannerSource.map((banner, index) => {
+            return (
+              <div
+                key={index}
+                id={index + 1}
+                onClick={onBannerSelectHandler}
+                className={`${styles['banner-nav']} ${activeIndex === index + 1 ? styles['banner-active'] : ''}`}
+              />
+            );
+          })}
         </div>
       )}
     </div>

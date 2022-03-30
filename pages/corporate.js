@@ -2,6 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Mail from '../assets/icons/mail.svg';
 import MatrixCable from '../assets/matrix-cable-system.PNG';
+import GeneralBanner from '../assets/corporate-banner/general.png';
+import MCIX from '../assets/corporate-banner/MCIX.png';
+import MCS from '../assets/corporate-banner/MCS.png';
+import DataCenter from '../assets/corporate-banner/data-center.png';
 
 // import Testimony from '../components/business-solution/testimony';
 import LearnMore from '../components/business-solution/learn-more';
@@ -20,7 +24,7 @@ export default function BusinessSolution() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <BannerBS alt='Business Solution' />
+      <BannerBS alt='Business Solution' bannerWidth={1536} bannerSource={[GeneralBanner, MCIX, MCS, DataCenter]} />
       {/* <Testimony /> */}
       <div className={styles['learn-more-container']}>
         <LearnMore />
