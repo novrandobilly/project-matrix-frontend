@@ -117,7 +117,10 @@ export default function Career({ products }) {
           </div>
         </div> */}
         <p className={styles['send-cv']}>
-          Send your CV to <strong>career@nap.net.id</strong>
+          Send your CV to{' '}
+          <strong>
+            <a href='mailto:recruitment@napinfo.co.id'>recruitment@napinfo.co.id</a>
+          </strong>
         </p>
         <div className={styles['job-listing']}>
           <div className={styles['job-item']}>

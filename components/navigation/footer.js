@@ -18,31 +18,28 @@ export default function footer() {
             <Link href='/broadband' passHref>
               <h3>Broadband</h3>
             </Link>
-            <Link href='/broadband'>Broadband</Link>
-            <Link href='/broadband'>Broadband</Link>
-            <Link href='/broadband'>Broadband</Link>
           </div>
           <div className={styles['link-list']}>
-            <h3>Corporate</h3>
+            <Link href='/corporate' passHref>
+              <h3>Corporate</h3>
+            </Link>
             <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
             <Link href='/highlights/ip-transit'>IP Transit</Link>
             <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>MC-IX</Link>
             <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
-            <Link href='/corporate'>Matrix Line</Link>
+            <Link href='/highlights/matrix-line-local-loop'>Matrix Line</Link>
             <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
             <Link href='/highlights/matrix-cloud'>Matrix Cloud</Link>
           </div>
           <div className={styles['link-list']}>
-            <h3>Company</h3>
-            <Link href='/company'>Company</Link>
-            <Link href='/company'>Company</Link>
-            <Link href='/company'>Company</Link>
+            <Link href='/company' passHref>
+              <h3>Company</h3>
+            </Link>
           </div>
           <div className={styles['link-list']}>
-            <h3>Career</h3>
-            <Link href='/career'>Career</Link>
-            <Link href='/career'>Career</Link>
-            <Link href='/career'>Career</Link>
+            <Link href='/career' passHref>
+              <h3>Career</h3>
+            </Link>
           </div>
           {/* <div className={styles['link-list']}>
             <h3>Highlights</h3>

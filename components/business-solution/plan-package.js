@@ -121,7 +121,7 @@ export default function PlanPackage() {
             With presence in more than 22 Data Center locations at Greater Jakarta Area, makes us the most connected
             DC-2-DC Solution for your business.
           </p>
-          <Link href='/highlights/matrix-data-center' passHref>
+          <Link href='/highlights/matrix-line-local-loop' passHref>
             <button className={styles['choice-button']}>
               <strong>Learn More</strong>
             </button>
