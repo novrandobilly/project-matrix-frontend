@@ -16,20 +16,13 @@ export default function PlanPackage({ products }) {
       <div className={styles['plan-option']}>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
-            <h3>30Mbps</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
+            <h3>Up To 30Mbps</h3>
           </div>
           <p className={styles['price']}>
             <strong>
-              Rp 500k<span>/month</span>
+              Rp 350k<span>/month</span>
             </strong>
           </p>
-          {/* <p className={styles['plan-description']}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
-            voluptatem voluptates impedit dicta vel! Suscipit.
-          </p> */}
           <ul className={styles['package-features']}>
             <li>
               <Image alt='Check Red' src={CheckRed} width={20} height={20} />
@@ -40,27 +33,22 @@ export default function PlanPackage({ products }) {
               &nbsp; Suitable for users with light activities
             </li>
           </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+            <button className={styles['choice-button']}>
+              <strong> Choose This Plan</strong>
+            </button>
+          </a>
         </div>
 
         <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
-            <h3>50Mbps</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
+            <h3>Up To 50Mbps</h3>
           </div>
           <p className={styles['price']}>
             <strong>
               Rp 500k<span>/month</span>
             </strong>
           </p>
-          {/* <p className={styles['plan-description']}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
-            voluptatem voluptates impedit dicta vel! Suscipit.
-          </p> */}
           <ul className={styles['package-features']}>
             <li>
               <Image alt='Check Red' src={CheckRed} width={20} height={20} />
@@ -71,27 +59,22 @@ export default function PlanPackage({ products }) {
               &nbsp; Suitable for users with moderate activities
             </li>
           </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+            <button className={styles['choice-button']}>
+              <strong> Choose This Plan</strong>
+            </button>
+          </a>
         </div>
 
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
-            <h3>100Mbps</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
+            <h3>Up To 100Mbps</h3>
           </div>
           <p className={styles['price']}>
             <strong>
-              Rp 500k<span>/month</span>
+              Rp 800k<span>/month</span>
             </strong>
           </p>
-          {/* <p className={styles['plan-description']}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
-            voluptatem voluptates impedit dicta vel! Suscipit.
-          </p> */}
           <ul className={styles['package-features']}>
             <li>
               <Image alt='Check Red' src={CheckRed} width={20} height={20} />
@@ -102,26 +85,19 @@ export default function PlanPackage({ products }) {
               &nbsp; Suitable for users with heavy activities
             </li>
           </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+            <button className={styles['choice-button']}>
+              <strong> Choose This Plan</strong>
+            </button>
+          </a>
         </div>
         <div className={styles['plan-card']}>
           <div className={styles['plan-header']}>
-            <h3>500Mbps</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
+            <h3>Up To 300Mbps</h3>
           </div>
           <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
+            <strong>Tanyakan Harga</strong>
           </p>
-          {/* <p className={styles['plan-description']}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
-            voluptatem voluptates impedit dicta vel! Suscipit.
-          </p> */}
           <ul className={styles['package-features']}>
             <li>
               <Image alt='Check Red' src={CheckRed} width={20} height={20} />
@@ -132,27 +108,43 @@ export default function PlanPackage({ products }) {
               &nbsp; Suitable for users with heavy activities
             </li>
           </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+            <button className={styles['choice-button']}>
+              <strong> Choose This Plan</strong>
+            </button>
+          </a>
+        </div>
+        <div className={styles['plan-card']}>
+          <div className={styles['plan-header']}>
+            <h3>Up To 500Mbps</h3>
+          </div>
+          <p className={styles['price']}>
+            <strong>Tanyakan Harga</strong>
+          </p>
+          <ul className={styles['package-features']}>
+            <li>
+              <Image alt='Check Red' src={CheckRed} width={20} height={20} />
+              &nbsp; Can be used for 20-30 devices
+            </li>
+            <li>
+              <Image alt='Check Red' src={CheckRed} width={20} height={20} />
+              &nbsp; Suitable for users with heavy activities
+            </li>
+          </ul>
+          <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+            <button className={styles['choice-button']}>
+              <strong> Choose This Plan</strong>
+            </button>
+          </a>
         </div>
 
         <div className={`${styles['plan-card']} ${styles['best-choice']}`}>
           <div className={styles['plan-header']}>
-            <h3>1Gbps</h3>
-            <p>
-              <strong>DISC 50%</strong>
-            </p>
+            <h3>Up To 1Gbps</h3>
           </div>
           <p className={styles['price']}>
-            <strong>
-              Rp 500k<span>/month</span>
-            </strong>
+            <strong>Tanyakan Harga</strong>
           </p>
-          {/* <p className={styles['plan-description']}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis mollitia ab cumque molestias beatae
-            voluptatem voluptates impedit dicta vel! Suscipit.
-          </p> */}
           <ul className={styles['package-features']}>
             <li>
               <Image alt='Check Red' src={CheckRed} width={20} height={20} />
@@ -163,9 +155,11 @@ export default function PlanPackage({ products }) {
               &nbsp; Suitable for users with heavy activities
             </li>
           </ul>
-          <button className={styles['choice-button']}>
-            <strong> Choose This Plan</strong>
-          </button>
+          <a href='https://broadband.nap.net.id/' target='_blank' rel='noreferrer'>
+            <button className={styles['choice-button']}>
+              <strong> Choose This Plan</strong>
+            </button>
+          </a>
         </div>
       </div>
     </div>

@@ -1,15 +1,14 @@
 import styles from './popup.module.scss';
 import { CSSTransition } from 'react-transition-group';
 import Image from 'next/image';
-import LettersAround from '../../assets/letters-around.png';
-import Building from '../../assets/icons/building.svg';
+import ExcitingNews from '../../assets/exciting-news.png';
 import Link from 'next/link';
 
 const Popup = ({ show, onCancel }) => {
   return (
     <CSSTransition in={show} timeout={400} classNames='slide-in-top' mountOnEnter unmountOnExit>
       <div className={styles['popup']} onClick={onCancel}>
-        <Image src={LettersAround} alt='Letters Around' width={250} height={275} />
+        <Image src={ExcitingNews} alt='Exciting News' width={250} height={275} />
         <h4>NEW LOOK, NEW FEEL, SAME HIGH-QUALITY DIGITAL SOLUTION.</h4>
         <p>Maximize Your Digital Experience With Us.</p>
         <p>Connecting You Faster To The World.</p>

@@ -1,21 +1,21 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Phone from '../assets/icons/phone-blue.svg';
 import ProductBanner from '../assets/product-banner.png';
+import Image from 'next/image';
 import Banner from '../components/utils/banner';
-import SatisfiedCustomer from '../components/product/satisfied-customer';
+// import SatisfiedCustomer from '../components/product/satisfied-customer';
 import PlanPackage from '../components/product/plan-package';
 import TermConditions from '../components/product/term-conditions';
-import FAQ from '../components/product/faq';
-import AddOns from '../components/product/addons';
+import Whatsapp from '../assets/icons/whatsapp-white.svg';
+// import FAQ from '../components/product/faq';
+// import AddOns from '../components/product/addons';
+import Banner1 from '../assets/broadband-banner/1.png';
+import Banner2 from '../assets/broadband-banner/2.png';
+import Banner3 from '../assets/broadband-banner/3.png';
 import styles from './broadband.module.scss';
 
 export default function Broadband({ allActiveProducts, paginateActiveProducts, FAQs, promoBanner }) {
   const { products } = allActiveProducts;
-  // console.log(allActiveProducts);
-  // console.log(paginateActiveProducts);
-  // console.log(FAQs);
-  // console.log(promoBanner);
+
   return (
     <div>
       <Head>
@@ -24,15 +24,16 @@ export default function Broadband({ allActiveProducts, paginateActiveProducts, F
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Banner
-        bannerSource={[ProductBanner, ProductBanner, ProductBanner, ProductBanner, ProductBanner]}
+        bannerSource={[Banner1, Banner2, Banner3]}
+        bannerWidth={1536}
         alt='Broadband Banner'
         style={{ paddingBottom: '50px' }}
       />
-      <section className={styles['satisfied-customer-container']}>
+      {/* <section className={styles['satisfied-customer-container']}>
         <SatisfiedCustomer />
-      </section>
+      </section> */}
       <PlanPackage products={products} />
-      <AddOns />
+      {/* <AddOns /> */}
       <section className={styles['TOC-container']}>
         <TermConditions />
       </section>
@@ -54,6 +55,12 @@ export default function Broadband({ allActiveProducts, paginateActiveProducts, F
           <button>Daftar Sekarang!</button>
         </a>
       </div>
+      <a href='https://wa.me/6281119078787' target='_blank' rel='noreferrer' className={styles['whatsapp-icon']}>
+        <div className={styles['whatsapp-container']}>
+          <Image alt='Whatsapp' src={Whatsapp} width={30} height={30} layout='fixed' />
+        </div>
+        <span className={styles['contact-text']}>Chat With Us!</span>
+      </a>
     </div>
   );
 }

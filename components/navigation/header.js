@@ -81,41 +81,37 @@ export default function Header() {
             onMouseEnter={() => setProductDropdown(true)}
             onMouseLeave={() => setProductDropdown(false)}>
             <span className={productDropdown ? styles['active'] : ''}>Product</span>
-            <ul ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
-              <li className={styles['product-dropdown-container']}>
-                <Link href='/broadband'>Broadband</Link>
-              </li>
-              <li className={styles['product-dropdown-container']}>
-                <div className={styles['broadband-corporate-title']}>
-                  <Link href='/corporate' passHref>
-                    <span>Corporate</span>
-                  </Link>
-                </div>
-                <ul className={styles['sub-dropdown']}>
-                  <li>
-                    <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
-                  </li>
-                  <li>
-                    <Link href='/highlights/ip-transit'>IP Transit</Link>
-                  </li>
-                  <li>
-                    <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>MC-IX</Link>
-                  </li>
-                  <li>
-                    <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
-                  </li>
-                  <li>
-                    <Link href='/highlights/matrix-line-local-loop'>Matrix Line</Link>
-                  </li>
-                  <li>
-                    <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
-                  </li>
-                  <li>
-                    <Link href='/highlights/matrix-cloud'>Matrix Cloud</Link>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
+              <ul>
+                <li>
+                  <Link href='/broadband'>Broadband</Link>
+                </li>
+                <li>
+                  <Link href='/corporate'>Corporate</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/iplc-international-private-leased-circuit'>&gt; IPLC</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/ip-transit'>&gt; IP Transit</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>&gt; MC-IX</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/matrix-data-center'>&gt; Matrix Data Center</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/matrix-line-local-loop'>&gt; Matrix Line</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/matrix-internet'>&gt; Matrix Internet</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/matrix-cloud'>&gt; Matrix Cloud</Link>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <NavLink href='/about-us'>Company</NavLink>
