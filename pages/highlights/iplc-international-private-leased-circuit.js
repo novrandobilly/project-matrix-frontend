@@ -23,7 +23,7 @@ export default function IPLC() {
         style={{ paddingBottom: '60px' }}
       />
       <div className={styles['back-link']}>
-        <Link href='/corporate'>&lt; Back to Home</Link>
+        <Link href='/corporate'>&lt; Back</Link>
       </div>
       <div className={styles['article-container']}>
         <h1 className={styles['article-container-title']}>Corporate &amp; Network Solutions</h1>
