@@ -11,6 +11,14 @@
   justify-content: center;
   align-items: center;
   background-color: #ec4176;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .banner-navigation {

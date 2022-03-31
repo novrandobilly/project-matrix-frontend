@@ -10,6 +10,14 @@
   justify-content: center;
   align-items: center;
   background-color: #151a48;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .banner-navigation {
@@ -25,7 +33,7 @@
     width: 30px;
     height: 8px;
     border-radius: 30px;
-    background-color: #242f94;
+    background-color: #fdb515;
     margin: 5px;
     transition: all 0.2s ease-in-out;
     &:hover {
@@ -36,6 +44,6 @@
   .banner-active {
     width: 20px;
     height: 20px;
-    background-color: #4d5efe;
+    background-color: #fdb515;
   }
 }

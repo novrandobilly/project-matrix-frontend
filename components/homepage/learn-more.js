@@ -13,11 +13,9 @@ export default function LearnMore() {
           <h1>Who We Are</h1>
           <p>
             PT NAP Info Lintas Nusa (Matrix NAP Info) is a prominent telecommunication company with more than 20 years
-            experience di Indonesia. We also conjointly operate sub-sea fiber optic infrastructures with Singapore –
-            based, Matrix Networks Pte. Ltd., and initiated our very own internet exchange that has become one of the
-            largest internet exchanges of the country. With an integrated ecosystem of both Network &amp; Managed
-            Service Provider, Matrix NAP Info has set to commit delivering solutions for businesses and engineering the
-            future.
+            experience di Indonesia. We initiated our very own internet exchange that has become one of the largest
+            internet exchanges of the country. With an integrated ecosystem of both Network &amp; Managed Service
+            Provider, Matrix NAP Info has set to commit delivering solutions for businesses and engineering the future.
           </p>
           <Link href='/about-us' passHref>
             <button className={styles['learn-more-button']}>

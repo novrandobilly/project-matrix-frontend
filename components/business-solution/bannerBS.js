@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BusinessSolutionBanner from '../../assets/business-solution-banner.png';
 import Image from 'next/image';
 import styles from './bannerBS.module.scss';
@@ -23,6 +23,17 @@ export default function BannerBS({
     const bannerId = e.target.id;
     setActiveIndex(parseInt(bannerId));
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (activeIndex === bannerSource.length) {
+        setActiveIndex(1);
+      } else {
+        setActiveIndex(activeIndex + 1);
+      }
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [activeIndex, bannerSource.length]);
   return (
     <div className={styles['container']} style={style}>
       <div className={styles['banner']}>

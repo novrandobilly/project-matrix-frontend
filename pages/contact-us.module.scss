@@ -85,6 +85,10 @@
     justify-content: center;
     width: 100%;
     max-width: 1000px;
+    .send-message {
+      width: 100%;
+      max-width: 200px;
+    }
     .input-group {
       width: 100%;
       display: flex;

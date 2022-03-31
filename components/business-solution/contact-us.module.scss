@@ -61,16 +61,20 @@
         font-size: 1.25rem;
       }
     }
-
+    .send-message {
+      width: 100%;
+      max-width: 200px;
+    }
     button {
       outline: none;
       border: none;
-      background-color: #4d5eff;
+      background-color: #fdb515;
       border-radius: 10px;
+      font-size: 1.25rem;
+      font-weight: 700;
       width: 100%;
-      max-width: 200px;
       padding: 20px 0;
-      color: #fff;
+      color: #000;
       align-self: flex-end;
       &:hover {
         cursor: pointer;

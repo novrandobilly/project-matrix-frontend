@@ -18,7 +18,6 @@ export default function PlanPackage({ products }) {
           </div>
           <p className={styles['sub-title']}>The First Protected Broadband Solution In Indonesia!</p>
           <p className={styles['sub-title']}>Money Back Guarantee If Connection Problems Occur</p>
-          <p className={styles['sub-title']}>FREE INSTALLATION FEE &amp; WIFI ROUTER!</p>
         </div>
       </div>
       <div className={styles['plan-option']}>

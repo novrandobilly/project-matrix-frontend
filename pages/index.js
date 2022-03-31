@@ -23,7 +23,11 @@ export default function Home({ FAQs }) {
         <meta name='description' content='Matrix Homepage' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Banner bannerWidth={1536} bannerSource={[Anniversary, InternetMati, MCIX, MCS, Ramadhan]} />
+      <Banner
+        bannerWidth={1536}
+        bannerSource={[Anniversary, InternetMati, MCIX, MCS, Ramadhan]}
+        hyperLink={['#', '/broadband', '/highlights/mc-ix-matrix-cable-internet-exchange', '/corporate', '#']}
+      />
       <EngineeringFuture />
       {/* <PlanPackage /> */}
       <section className={styles['learn-more-container']}>

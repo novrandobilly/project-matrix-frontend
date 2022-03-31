@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import SolutionMindset from '../../assets/solution-mindset.svg';
+import SolutionMindset from '../../assets/solution-mindset-yellow.svg';
 import VoiceControl from '../../assets/voice-control.png';
 import styles from './learn-more.module.scss';
 

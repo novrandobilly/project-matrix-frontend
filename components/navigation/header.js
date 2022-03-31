@@ -80,7 +80,11 @@ export default function Header() {
             className={styles['product']}
             onMouseEnter={() => setProductDropdown(true)}
             onMouseLeave={() => setProductDropdown(false)}>
-            <span className={productDropdown ? styles['active'] : ''}>Product</span>
+            <span
+              className={productDropdown ? styles['active'] : ''}
+              onClick={() => setProductDropdown(!productDropdown)}>
+              Product
+            </span>
             <div ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
               <ul>
                 <li>
