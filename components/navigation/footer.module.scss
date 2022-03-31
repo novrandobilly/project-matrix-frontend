@@ -15,20 +15,45 @@
 .submenu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 150px;
   padding-right: 40px;
+  flex-wrap: wrap;
   .link-list {
     min-width: 125px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
+    outline: none;
     &:hover {
       cursor: pointer;
     }
   }
+
+  .wholesales-dropdown,
+  .enterprise-dropdown,
+  .support-dropdown {
+    transform: translateY(50%);
+    min-width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    z-index: 5;
+    transition: all 300ms ease-in-out;
+    padding: 10px 0 0;
+  }
+  .hide {
+    transform: translateY(-100%);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+  }
+
   h3 {
     margin: 0 0 10px;
   }
@@ -93,23 +118,6 @@
   }
 }
 
-.wholesales-dropdown,
-.enterprise-dropdown,
-.support-dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  z-index: 5;
-  transition: all 300ms ease-in-out;
-}
-.hide {
-  transform: translateY(-100%);
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0;
-}
-
 @media screen and (max-width: 900px) {
   .container {
     padding: 40px;
@@ -126,21 +134,72 @@
       .submenu {
         width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin: 0 0 50px;
+        margin: 40px 0 50px;
+        padding: 0;
         .link-list {
-          margin: 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          margin: 5px 0;
+          height: 35px;
+          position: relative;
+          transition: all 300ms ease-in-out;
+
+          .wholesales-dropdown,
+          .enterprise-dropdown,
+          .support-dropdown {
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            & > * {
+              width: 100%;
+              text-align: center;
+            }
+          }
+          &.dropdown {
+            // display: none;
+            justify-content: flex-start;
+            height: 170px;
+            .wholesales-dropdown,
+            .enterprise-dropdown,
+            .support-dropdown {
+              top: 30px;
+            }
+          }
+          h3 {
+            width: 100%;
+            text-align: center;
+          }
         }
       }
     }
     .copyrights {
+      width: 100%;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .company-information {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
       align-items: center;
+      width: 100%;
+      max-width: 500px;
+      min-height: 100px;
       & > * {
+        width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
       }
       .social-media {
         width: 100%;
