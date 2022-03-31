@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../assets/logo-color.png';
@@ -9,7 +9,20 @@ import ISO from '../../assets/ISO.png';
 import CustomerCare from '../../assets/customer-care.png';
 import styles from './footer.module.scss';
 
-export default function footer() {
+export default function Footer() {
+  const [wholeSalesDD, setWholeSalesDD] = useState(false);
+  const [enterpriseDD, setEnterpriseDD] = useState(false);
+  const [supportDD, setSupportDD] = useState(false);
+
+  const toggleWholeSalesDD = () => {
+    setWholeSalesDD(!wholeSalesDD);
+  };
+  const toggleEnterpriseDD = () => {
+    setEnterpriseDD(!enterpriseDD);
+  };
+  const toggleSupportDD = () => {
+    setSupportDD(!supportDD);
+  };
   return (
     <div className={styles['container']}>
       <div className={styles['menu']}>
@@ -18,16 +31,25 @@ export default function footer() {
             <Link href='/broadband' passHref>
               <h3>Broadband</h3>
             </Link>
-            <Link href='/corporate' passHref>
-              <h3>Corporate &amp; Network Solutions</h3>
-            </Link>
-            <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
-            <Link href='/highlights/ip-transit'>IP Transit</Link>
-            <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>MC-IX</Link>
-            <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
-            <Link href='/highlights/matrix-line-local-loop'>Matrix Line</Link>
-            <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
-            <Link href='/highlights/matrix-cloud'>Matrix Cloud</Link>
+          </div>
+          <div className={styles['link-list']}>
+            <h3 onClick={toggleWholeSalesDD}>Wholesales</h3>
+            <div className={`${styles['wholesales-dropdown']} ${wholeSalesDD ? '' : styles['hide']}`}>
+              <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
+              <Link href='/highlights/ip-transit'>IP Transit</Link>
+              <Link href='/highlights/mc-ix-matrix-cable-internet-exchange'>MC-IX</Link>
+              <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
+              <Link href='/highlights/matrix-line-local-loop'>Matrix Line (Local Loop)</Link>
+            </div>
+          </div>
+          <div className={styles['link-list']}>
+            <h3 onClick={toggleEnterpriseDD}>Enterprise</h3>
+            <div className={`${styles['enterprise-dropdown']} ${enterpriseDD ? '' : styles['hide']}`}>
+              <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
+              <Link href='/highlights/matrix-data-center'>Matrix Data Center</Link>
+              <Link href='/highlights/matrix-cloud'>Matrix Cloud</Link>
+              <Link href='/highlights/matrix-line-local-loop'>Matrix Line (Local Loop)</Link>
+            </div>
           </div>
           <div className={styles['link-list']}>
             <Link href='/about-us' passHref>
@@ -39,27 +61,28 @@ export default function footer() {
               <h3>Career</h3>
             </Link>
           </div>
-          {/* <div className={styles['link-list']}>
-            <h3>Highlights</h3>
-            <Link href='/highlights'>Highlights</Link>
-            <Link href='/highlights'>Highlights</Link>
-            <Link href='/highlights'>Highlights</Link>
-          </div> */}
           <div className={styles['link-list']}>
-            <h3>Support</h3>
+            <Link href='/career' passHref>
+              <h3>Contact Us</h3>
+            </Link>
+          </div>
 
-            <a target='_blank' rel='noreferrer' href='https://cacti.nap.net.id/'>
-              Cacti
-            </a>
-            <a target='_blank' rel='noreferrer' href='https://mcs.nap.net.id/'>
-              IP-Transit
-            </a>
-            <a target='_blank' rel='noreferrer' href='https://mcsix.nap.net.id/'>
-              MC-IX
-            </a>
-            <a target='_blank' rel='noreferrer' href='https://lg.napinfo.co.id/'>
-              Looking Glass
-            </a>
+          <div className={styles['link-list']}>
+            <h3 onClick={toggleSupportDD}>Support</h3>
+            <div className={`${styles['support-dropdown']} ${supportDD ? '' : styles['hide']}`}>
+              <a target='_blank' rel='noreferrer' href='https://cacti.nap.net.id/'>
+                Cacti
+              </a>
+              <a target='_blank' rel='noreferrer' href='https://mcs.nap.net.id/'>
+                IP-Transit
+              </a>
+              <a target='_blank' rel='noreferrer' href='https://mcsix.nap.net.id/'>
+                MC-IX
+              </a>
+              <a target='_blank' rel='noreferrer' href='https://lg.napinfo.co.id/'>
+                Looking Glass
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles['copyrights']}>

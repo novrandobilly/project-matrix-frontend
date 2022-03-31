@@ -87,11 +87,11 @@ export default function Header() {
             </span>
             <div ref={productDDref} className={`${styles['product-dropdown']} ${!productDropdown && styles['hide']}`}>
               <ul>
-                <li>
+                <li className={styles['main-navbar']}>
                   <Link href='/broadband'>Broadband</Link>
                 </li>
-                <li>
-                  <Link href='/corporate'>Corporate</Link>
+                <li className={styles['main-navbar']}>
+                  <Link href='/corporate'>Wholesales</Link>
                 </li>
                 <li>
                   <Link href='/highlights/iplc-international-private-leased-circuit'>&gt; IPLC</Link>
@@ -106,13 +106,23 @@ export default function Header() {
                   <Link href='/highlights/matrix-data-center'>&gt; Matrix Data Center</Link>
                 </li>
                 <li>
-                  <Link href='/highlights/matrix-line-local-loop'>&gt; Matrix Line</Link>
+                  <Link href='/highlights/matrix-line-local-loop'>&gt; Matrix Line (Local loop)</Link>
+                </li>
+
+                <li className={styles['main-navbar']}>
+                  <span>Enterprise</span>
                 </li>
                 <li>
                   <Link href='/highlights/matrix-internet'>&gt; Matrix Internet</Link>
                 </li>
                 <li>
+                  <Link href='/highlights/matrix-data-center'>&gt; Matrix Data Center</Link>
+                </li>
+                <li>
                   <Link href='/highlights/matrix-cloud'>&gt; Matrix Cloud</Link>
+                </li>
+                <li>
+                  <Link href='/highlights/matrix-line-local-loop'>&gt; Matrix Line (Local loop)</Link>
                 </li>
               </ul>
             </div>
