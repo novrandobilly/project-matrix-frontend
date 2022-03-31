@@ -122,7 +122,8 @@
       }
     }
 
-    button {
+    a {
+      text-align: center;
       outline: none;
       border: none;
       background-color: #fdb515;
@@ -134,6 +135,7 @@
       padding: 20px 0;
       color: #000;
       align-self: flex-end;
+      margin: auto;
       &:hover {
         cursor: pointer;
       }

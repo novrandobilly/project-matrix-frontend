@@ -92,7 +92,9 @@ export default function footer() {
             </div>
           </div>
           <div className={styles['customer-care']}>
-            <Image alt='Customer Care' src={CustomerCare} width={250} height={125} />
+            <a href='tel:1500787'>
+              <Image alt='Customer Care' src={CustomerCare} width={250} height={125} />
+            </a>
           </div>
         </div>
       </div>

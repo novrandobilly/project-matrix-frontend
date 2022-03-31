@@ -74,8 +74,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  background-color: #4d5eff;
-  color: #fff;
+  background-color: #fdb515;
+  color: #000;
   border-radius: 10px;
   a {
     width: 100%;
@@ -84,8 +84,8 @@
     padding: 7px;
     transition: all 0.2s ease-in-out;
     &:hover {
-      background-color: #fff;
-      color: #4d5eff;
+      background-color: #000;
+      color: #fdb515;
       width: 100%;
     }
   }

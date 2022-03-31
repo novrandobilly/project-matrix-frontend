@@ -35,7 +35,7 @@ export default function LearnMore() {
             the world through global content without barriers and without limits. A quality internet network, at ease,
             and the only protected broadband with compensation guarantee in Indonesia
           </p>
-          <Link href='/about-us' passHref>
+          <Link href='/broadband' passHref>
             <button className={styles['learn-more-button']}>
               <strong>Learn More</strong>
             </button>

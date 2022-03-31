@@ -25,7 +25,7 @@ export default function MatrixLine() {
         style={{ paddingBottom: '60px' }}
       />
       <div className={styles['back-link']}>
-        <Link href='/'>&lt; Back to home</Link>
+        <Link href='/corporate'>&lt; Back to Home</Link>
       </div>
       <div className={styles['article-container']}>
         <h1 className={styles['article-container-title']}>Corporate &amp; Network Solutions</h1>

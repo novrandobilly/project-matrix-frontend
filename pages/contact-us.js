@@ -93,13 +93,11 @@ export default function ContactUs() {
             <textarea placeholder='Message' cols='30' ref={messageRef}></textarea>
           </div>
           <a
+            target='_blank'
+            rel='noreferrer'
             className={styles['send-message']}
-            href={`mailto:info@napinfo.co.id?cc=customer.care@napinfo.co.id&?subject=Inquiry%20From%20Website&body=Name%3A%20${
-              nameRef.current?.value || ''
-            }%0D%0APhone%20Number%3A%20${phoneRef.current?.value || ''}%0D%0AEmail%3A%20${
-              nameRef.current?.value || ''
-            }%0D%0AMessage%3A%0D%0A${messageRef.current?.value || ''}`}>
-            <button>Send Message</button>
+            href={`mailto:info@napinfo.co.id?cc=customer.care@napinfo.co.id&?subject=Inquiry%20From%20Website&body=Name%3A%20${nameRef.current?.value}%0D%0APhone%20Number%3A%20${phoneRef.current?.value}%0D%0AEmail%3A%20${nameRef.current?.value}%0D%0AMessage%3A%0D%0A${messageRef.current?.value}`}>
+            Send Message
           </a>
         </form>
       </div>
