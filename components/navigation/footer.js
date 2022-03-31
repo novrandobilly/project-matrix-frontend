@@ -13,7 +13,7 @@ export default function Footer() {
   const [wholeSalesDD, setWholeSalesDD] = useState(false);
   const [enterpriseDD, setEnterpriseDD] = useState(false);
   const [supportDD, setSupportDD] = useState(false);
-
+  console.log(supportDD);
   const toggleWholeSalesDD = () => {
     setWholeSalesDD(!wholeSalesDD);
   };
@@ -32,7 +32,10 @@ export default function Footer() {
               <h3>Broadband</h3>
             </Link>
           </div>
-          <div className={styles['link-list']}>
+          <div
+            className={`${styles['link-list']} ${wholeSalesDD ? styles['dropdown'] : ''}`}
+            onMouseEnter={() => setWholeSalesDD(true)}
+            onMouseLeave={() => setWholeSalesDD(false)}>
             <h3 onClick={toggleWholeSalesDD}>Wholesales</h3>
             <div className={`${styles['wholesales-dropdown']} ${wholeSalesDD ? '' : styles['hide']}`}>
               <Link href='/highlights/iplc-international-private-leased-circuit'>IPLC</Link>
@@ -42,7 +45,10 @@ export default function Footer() {
               <Link href='/highlights/matrix-line-local-loop'>Matrix Line (Local Loop)</Link>
             </div>
           </div>
-          <div className={styles['link-list']}>
+          <div
+            className={`${styles['link-list']} ${enterpriseDD ? styles['dropdown'] : ''}`}
+            onMouseEnter={() => setEnterpriseDD(true)}
+            onMouseLeave={() => setEnterpriseDD(false)}>
             <h3 onClick={toggleEnterpriseDD}>Enterprise</h3>
             <div className={`${styles['enterprise-dropdown']} ${enterpriseDD ? '' : styles['hide']}`}>
               <Link href='/highlights/matrix-internet'>Matrix Internet</Link>
@@ -67,7 +73,10 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className={styles['link-list']}>
+          <div
+            className={`${styles['link-list']} ${supportDD ? styles['dropdown'] : ''}`}
+            onMouseEnter={() => setSupportDD(true)}
+            onMouseLeave={() => setSupportDD(false)}>
             <h3 onClick={toggleSupportDD}>Support</h3>
             <div className={`${styles['support-dropdown']} ${supportDD ? '' : styles['hide']}`}>
               <a target='_blank' rel='noreferrer' href='https://cacti.nap.net.id/'>
